@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<foxml:digitalObject FEDORA_URI="info:fedora/uuid:7243efa0-8640-11e2-9e96-0800200c9a66"
+  PID="uuid:7243efa0-8640-11e2-9e96-0800200c9a66" VERSION="1.1" xmlns:foxml="info:fedora/fedora-system:def/foxml#"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/definitions/1/0/foxml1-1.xsd">
+  <foxml:objectProperties>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#state" VALUE="Active"/>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#label" VALUE="   Austria   "/>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#ownerId" VALUE="fedoraAdmin"/>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#createdDate" VALUE="2013-03-06T12:07:41.760Z"/>
+    <foxml:property NAME="info:fedora/fedora-system:def/view#lastModifiedDate" VALUE="2017-05-09T07:52:33.486Z"/>
+  </foxml:objectProperties>
+  <foxml:datastream CONTROL_GROUP="X" FEDORA_URI="info:fedora/uuid:7243efa0-8640-11e2-9e96-0800200c9a66/AUDIT"
+    ID="AUDIT" STATE="A" VERSIONABLE="false">
+    <foxml:datastreamVersion CREATED="2013-03-06T12:07:41.760Z"
+      FORMAT_URI="info:fedora/fedora-system:format/xml.fedora.audit" ID="AUDIT.0" LABEL="Audit Trail for this object" MIMETYPE="text/xml">
+      <foxml:xmlContent>
+        <audit:auditTrail xmlns:audit="info:fedora/fedora-system:def/audit#">
+          <audit:record ID="AUDREC1">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>ingest</audit:action>
+            <audit:componentID/>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2015-11-19T23:23:38.584Z</audit:date>
+            <audit:justification>Initial ingest</audit:justification>
+          </audit:record>
+          <audit:record ID="AUDREC2">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>ingest</audit:action>
+            <audit:componentID/>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2017-05-09T07:52:33.486Z</audit:date>
+            <audit:justification>Initial ingest</audit:justification>
+          </audit:record>
+        </audit:auditTrail>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream CONTROL_GROUP="X" FEDORA_URI="info:fedora/uuid:7243efa0-8640-11e2-9e96-0800200c9a66/DC" ID="DC"
+    STATE="A" VERSIONABLE="false">
+    <foxml:datastreamVersion CREATED="2013-03-06T12:07:41.000Z" FORMAT_URI="http://www.openarchives.org/OAI/2.0/oai_dc/"
+      ID="DC.0" LABEL="Dublin Core Record for this object" MIMETYPE="text/xml" SIZE="719">
+      <foxml:xmlContent>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/"
+          xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+          <dc:title>Austria</dc:title>
+          <dc:creator>Raffelsperger Franz</dc:creator>
+          <dc:publisher>Verlag der ersten a.p. typo-geographischen Kunst-Anstalt</dc:publisher>
+          <dc:date>1843</dc:date>
+          <dc:type>model:monograph</dc:type>
+          <dc:identifier>uuid:7243efa0-8640-11e2-9e96-0800200c9a66</dc:identifier>
+          <dc:identifier>contract:HF000</dc:identifier>
+          <dc:language>ger</dc:language>
+          <dc:rights>policy:public</dc:rights>
+        </oai_dc:dc>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream CONTROL_GROUP="X" FEDORA_URI="info:fedora/uuid:7243efa0-8640-11e2-9e96-0800200c9a66/BIBLIO_MODS"
+    ID="BIBLIO_MODS" STATE="A" VERSIONABLE="false">
+    <foxml:datastreamVersion CREATED="2013-03-06T12:07:41.000Z" FORMAT_URI="http://www.loc.gov/mods/v3"
+      ID="BIBLIO_MODS.0" LABEL="BIBLIO_MODS description of current object" MIMETYPE="text/xml" SIZE="3244">
+      <foxml:xmlContent>
+        <mods:modsCollection xmlns:mods="http://www.loc.gov/mods/v3">
+          <mods:mods version="3.4">
+            <mods:identifier type="urn">7243efa0-8640-11e2-9e96-0800200c9a66</mods:identifier>
+            <mods:identifier type="isbn"/>
+            <mods:titleInfo>
+              <mods:title>
+  Austria
+  </mods:title>
+              <mods:subTitle>
+  Erster typometrischer Atlas für Gechäftsleute jeder Art, Gymnasien, Schulen und Zeitungsleser
+  </mods:subTitle>
+            </mods:titleInfo>
+            <mods:subject/>
+            <mods:location>
+              <mods:physicalLocation>ABA013</mods:physicalLocation>
+              <mods:shelfLocator>GG 39</mods:shelfLocator>
+            </mods:location>
+            <mods:name type="personal">
+              <mods:namePart type="family">Raffelsperger</mods:namePart>
+              <mods:namePart type="given">Franz</mods:namePart>
+              <mods:role>
+                <mods:roleTerm type="code">cre</mods:roleTerm>
+                <mods:roleTerm type="text">Author</mods:roleTerm>
+              </mods:role>
+            </mods:name>
+            <mods:typeOfResource>text</mods:typeOfResource>
+            <mods:recordInfo>
+              <mods:recordIdentifier source="CZ PrSTK">000654003</mods:recordIdentifier>
+            </mods:recordInfo>
+            <mods:originInfo transliteration="publisher">
+              <mods:place>
+                <mods:placeTerm type="text">Wien</mods:placeTerm>
+              </mods:place>
+              <mods:publisher>Verlag der ersten a.p. typo-geographischen Kunst-Anstalt</mods:publisher>
+              <mods:dateIssued>1843</mods:dateIssued>
+            </mods:originInfo>
+            <mods:originInfo>
+              <mods:issuance>monographic</mods:issuance>
+            </mods:originInfo>
+            <mods:language>
+              <mods:languageTerm authority="iso639-2b" type="code">ger</mods:languageTerm>
+            </mods:language>
+            <mods:physicalDescription>
+              <mods:extent>Soubor 14 listů barev. map</mods:extent>
+              <mods:note>List č. 5 a 6 chybí, mapa Čech má 2 exempláře; Na tit. str. uvedeno 3.vydání, jednotlivé listy kromě 2.exempláře Čech jsou však z vydání s vročením 1841; Volné listy v papírové obálce; Barevná litografie; Zdobená zeleno-černá tit. str. Mapy jsou výrazně barevně zpracovány do plastického geografického zobrazení; Zahrnuje: 1. Generalkarte des Kaiserthums. - 2. Erzherzogthum Österreich. - 3.-6. Königreich Ungarn - 7. Königreich Böhmen. - 8.-9. Königreich Galicien. - 10. Königreich Lombardie. - 11. Königreich Ilirien. - 12. Königreich Dalmatien. - 13. Siebenbürgen. - 14. Mähren und Schlesien. - 15. Tirol; Na všech listech mimo listy 4 a 5 oválné razítko BOEHM. STAEND. TECHN. INSTITUT</mods:note>
+            </mods:physicalDescription>
+            <mods:physicalDescription>
+              <mods:note type="action"/>
+              <mods:note type="preservationStateOfArt"/>
+            </mods:physicalDescription>
+            <mods:classification authority="ddc"/>
+            <mods:classification authority="udc"/>
+          </mods:mods>
+        </mods:modsCollection>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream CONTROL_GROUP="E" FEDORA_URI="info:fedora/uuid:7243efa0-8640-11e2-9e96-0800200c9a66/POLICY"
+    ID="POLICY" STATE="A" VERSIONABLE="false">
+    <foxml:datastreamVersion CREATED="2013-03-06T12:07:41.000Z" ID="POLICY.0" LABEL="" MIMETYPE="application/rdf+xml">
+      <foxml:contentLocation REF="http://kramerius1.ntkcz.cz:8080/fedora/get/policy:public/POLICYDEF" TYPE="URL"/>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream CONTROL_GROUP="X" FEDORA_URI="info:fedora/uuid:7243efa0-8640-11e2-9e96-0800200c9a66/RELS-EXT"
+    ID="RELS-EXT" STATE="A" VERSIONABLE="false">
+    <foxml:datastreamVersion CREATED="2017-02-13T11:12:51.781Z" FORMAT_URI="info:fedora/fedora-system:FedoraRELSExt-1.0"
+      ID="RELS-EXT.1" LABEL="RDF Statements about this object" MIMETYPE="application/rdf+xml" SIZE="3095">
+      <foxml:xmlContent>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+          <rdf:Description rdf:about="info:fedora/uuid:7243efa0-8640-11e2-9e96-0800200c9a66">
+            <hasModel rdf:resource="info:fedora/model:monograph" xmlns="info:fedora/fedora-system:def/model#"/>
+            <itemID xmlns="http://www.openarchives.org/OAI/2.0/">uuid:7243efa0-8640-11e2-9e96-0800200c9a66</itemID>
+            <hasPage rdf:resource="info:fedora/uuid:1287f5e6-864d-11e2-868b-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:23b38f57-864d-11e2-868b-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:353c8b08-864d-11e2-868b-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:47606729-864d-11e2-868b-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:584e5b5a-864d-11e2-868b-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:6876dcab-864d-11e2-868b-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:78cd4bcc-864d-11e2-868b-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:89a93e9d-864d-11e2-868b-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:9923a59e-864d-11e2-868b-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:a973850f-864d-11e2-868b-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:bb727410-864d-11e2-868b-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:cb589531-864d-11e2-868b-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:dca4aef2-864d-11e2-868b-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:ee0cdc33-864d-11e2-868b-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:ff3f5374-864d-11e2-868b-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <contract xmlns="http://www.nsdl.org/ontologies/relationships#">HF000</contract>
+            <policy xmlns="http://www.nsdl.org/ontologies/relationships#">policy:public</policy>
+            <rdf:isMemberOfCollection rdf:resource="info:fedora/vc:c281e9a3-5a65-4700-b8c0-3da6c7b102c3"/>
+          </rdf:Description>
+        </rdf:RDF>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+</foxml:digitalObject>

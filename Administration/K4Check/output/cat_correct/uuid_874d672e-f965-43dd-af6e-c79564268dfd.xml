@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<foxml:digitalObject FEDORA_URI="info:fedora/uuid:874d672e-f965-43dd-af6e-c79564268dfd"
+  PID="uuid:874d672e-f965-43dd-af6e-c79564268dfd" VERSION="1.1" xmlns:foxml="info:fedora/fedora-system:def/foxml#"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/definitions/1/0/foxml1-1.xsd">
+  <foxml:objectProperties>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#state" VALUE="Active"/>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#label" VALUE="   Pivo v písních lidových a znárodnělých   "/>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#ownerId" VALUE="fedoraAdmin"/>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#createdDate" VALUE="2012-09-13T16:16:39.007Z"/>
+    <foxml:property NAME="info:fedora/fedora-system:def/view#lastModifiedDate" VALUE="2015-11-27T09:40:10.665Z"/>
+  </foxml:objectProperties>
+  <foxml:datastream CONTROL_GROUP="X" FEDORA_URI="info:fedora/uuid:874d672e-f965-43dd-af6e-c79564268dfd/AUDIT"
+    ID="AUDIT" STATE="A" VERSIONABLE="false">
+    <foxml:datastreamVersion CREATED="2012-09-13T16:16:39.007Z"
+      FORMAT_URI="info:fedora/fedora-system:format/xml.fedora.audit" ID="AUDIT.0" LABEL="Audit Trail for this object" MIMETYPE="text/xml">
+      <foxml:xmlContent>
+        <audit:auditTrail xmlns:audit="info:fedora/fedora-system:def/audit#">
+          <audit:record ID="AUDREC1">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>ingest</audit:action>
+            <audit:componentID/>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2015-11-19T14:02:39.300Z</audit:date>
+            <audit:justification>Initial ingest</audit:justification>
+          </audit:record>
+          <audit:record ID="AUDREC2">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>modifyDatastreamByValue</audit:action>
+            <audit:componentID>DC</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2015-11-27T09:40:10.489Z</audit:date>
+            <audit:justification/>
+          </audit:record>
+          <audit:record ID="AUDREC3">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>purgeDatastream</audit:action>
+            <audit:componentID>POLICY</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2015-11-27T09:40:10.623Z</audit:date>
+            <audit:justification> . . . Purged datastream (ID=POLICY), versions ranging from the beginning of time to the end of time.  This resulted in the permanent removal of 1 datastream version(s) (2012-09-13T18:16:39.000Z) and all associated audit records.</audit:justification>
+          </audit:record>
+          <audit:record ID="AUDREC4">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>addDatastream</audit:action>
+            <audit:componentID>POLICY</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2015-11-27T09:40:10.665Z</audit:date>
+            <audit:justification/>
+          </audit:record>
+        </audit:auditTrail>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream CONTROL_GROUP="X" FEDORA_URI="info:fedora/uuid:874d672e-f965-43dd-af6e-c79564268dfd/BIBLIO_MODS"
+    ID="BIBLIO_MODS" STATE="A" VERSIONABLE="false">
+    <foxml:datastreamVersion CREATED="2012-09-13T16:16:39.000Z" FORMAT_URI="http://www.loc.gov/mods/v3"
+      ID="BIBLIO_MODS.0" LABEL="BIBLIO_MODS description of current object" MIMETYPE="text/xml" SIZE="3040">
+      <foxml:xmlContent>
+        <mods:modsCollection xmlns:mods="http://www.loc.gov/mods/v3">
+          <mods:mods version="3.4">
+            <mods:identifier type="urn">874d672e-f965-43dd-af6e-c79564268dfd</mods:identifier>
+            <mods:identifier type="isbn"/>
+            <mods:titleInfo>
+              <mods:title>
+  Pivo v písních lidových a znárodnělých
+  </mods:title>
+            </mods:titleInfo>
+            <mods:subject/>
+            <mods:location>
+              <mods:physicalLocation>ABA013</mods:physicalLocation>
+              <mods:shelfLocator>HF 268</mods:shelfLocator>
+            </mods:location>
+            <mods:name type="personal">
+              <mods:namePart type="family">Zíbrt</mods:namePart>
+              <mods:namePart type="given">Čeněk</mods:namePart>
+              <mods:role>
+                <mods:roleTerm type="code">cre</mods:roleTerm>
+                <mods:roleTerm type="text">Author</mods:roleTerm>
+              </mods:role>
+            </mods:name>
+            <mods:typeOfResource>text</mods:typeOfResource>
+            <mods:originInfo transliteration="publisher">
+              <mods:place>
+                <mods:placeTerm type="text">Praha</mods:placeTerm>
+              </mods:place>
+              <mods:publisher>O. Zachar</mods:publisher>
+              <mods:dateIssued>1909</mods:dateIssued>
+            </mods:originInfo>
+            <mods:originInfo>
+              <mods:issuance>monographic</mods:issuance>
+            </mods:originInfo>
+            <mods:language>
+              <mods:languageTerm authority="iso639-2b" type="code">cze</mods:languageTerm>
+            </mods:language>
+            <mods:physicalDescription>
+              <mods:extent>401 s.</mods:extent>
+              <mods:note>Příl. časopisu Sládek, roč. 3; Obsahuje rejstřík</mods:note>
+            </mods:physicalDescription>
+            <mods:physicalDescription>
+              <mods:note type="action"/>
+              <mods:note type="preservationStateOfArt"/>
+            </mods:physicalDescription>
+            <mods:classification authority="ddc"/>
+            <mods:classification authority="udc">784.4</mods:classification>
+            <mods:classification authority="ddc"/>
+            <mods:classification authority="udc">784.4.049:663.4</mods:classification>
+          </mods:mods>
+        </mods:modsCollection>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream CONTROL_GROUP="X" FEDORA_URI="info:fedora/uuid:874d672e-f965-43dd-af6e-c79564268dfd/DC" ID="DC"
+    STATE="A" VERSIONABLE="false">
+    <foxml:datastreamVersion CREATED="2015-11-27T09:40:10.489Z" FORMAT_URI="http://www.openarchives.org/OAI/2.0/oai_dc/"
+      ID="DC.1" LABEL="Dublin Core Record for this object" MIMETYPE="text/xml" SIZE="788">
+      <foxml:xmlContent>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/"
+          xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+          <dc:title>Pivo v písních lidových a znárodnělých</dc:title>
+          <dc:creator>Zíbrt Čeněk</dc:creator>
+          <dc:subject>udc:784.4</dc:subject>
+          <dc:subject>udc:784.4.049:663.4</dc:subject>
+          <dc:publisher>O. Zachar</dc:publisher>
+          <dc:date>1909</dc:date>
+          <dc:type>model:monograph</dc:type>
+          <dc:identifier>uuid:874d672e-f965-43dd-af6e-c79564268dfd</dc:identifier>
+          <dc:identifier>contract:NTK10</dc:identifier>
+          <dc:language>cze</dc:language>
+          <dc:rights>policy:public</dc:rights>
+        </oai_dc:dc>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream CONTROL_GROUP="X" FEDORA_URI="info:fedora/uuid:874d672e-f965-43dd-af6e-c79564268dfd/RELS-EXT"
+    ID="RELS-EXT" STATE="A" VERSIONABLE="false">
+    <foxml:datastreamVersion CREATED="2015-11-27T09:40:10.573Z" FORMAT_URI="info:fedora/fedora-system:FedoraRELSExt-1.0"
+      ID="RELS-EXT.2" LABEL="RDF Statements about this object" MIMETYPE="application/rdf+xml" SIZE="62199">
+      <foxml:xmlContent>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+          <rdf:Description rdf:about="info:fedora/uuid:874d672e-f965-43dd-af6e-c79564268dfd">
+            <hasModel rdf:resource="info:fedora/model:monograph" xmlns="info:fedora/fedora-system:def/model#"/>
+            <itemID xmlns="http://www.openarchives.org/OAI/2.0/">uuid:874d672e-f965-43dd-af6e-c79564268dfd</itemID>
+            <hasPage rdf:resource="info:fedora/uuid:bb91eb6f-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:bcbf47e0-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:bd6c9ee1-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:bdfafc32-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:be90d393-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:bf260eb4-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:bfbcf785-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:c054f1c6-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:c0f131c7-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:c177c6e8-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:c1fe34f9-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:c28454ea-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:c3176d2b-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:c39f88ec-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:c422c2ad-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:c4aab75e-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:c5325def-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:c5bb8b20-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:c641d221-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:c6ce33a2-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:c7560143-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:c7e91984-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:c875a215-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:c8fc3736-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:c984a117-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:ca0c2098-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:ca94b189-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:cb1c09fa-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:cbac3c0b-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:cc36a1bc-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:ccc721ed-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:cd4e052e-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:cdd92e2f-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:ce5d7960-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:cef06a91-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:cf788652-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:d0044b93-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:d08d2aa4-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:d1180585-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:d1996a86-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:d222bec7-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:d2a66db8-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:d32ed799-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:d3c9b80a-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:d4504d2b-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:d4db4f1c-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:d565dbdd-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:d5f598be-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:d67e77cf-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:d70a8b30-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:d79788f1-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:d8234e32-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:d8b1f9a3-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:d937f284-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:d9c4f045-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:da4d5a26-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:dadc0597-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:db64bd98-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:dbf11f19-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:dc7913ca-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:dd08a99b-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:dd90291c-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:de1ba03d-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:dea0d5ce-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:df317d0f-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:dfb923a0-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:e0464871-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:e0c98232-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:e15854b3-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:e1e21e24-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:e2727745-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:e2f82206-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:e3863137-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:e406f9f8-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:e4933469-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:e51cafba-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:e5ad56fb-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:e634fd8c-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:e6c15f0d-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:e74ab34e-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:e7f8a68f-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:e8830c40-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:e911b7b1-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:e99f2aa2-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:ea2e7253-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:eab63ff4-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:eb411ad5-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:ebc90f86-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:ec56f7a7-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:ecdc2d38-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:ed681989-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:edf16dca-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:ee7d5a1b-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:ef0ca1cc-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:ef97077d-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:f022a5ae-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:f0ab0f8f-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:f1379720-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:f1c30e41-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:f24ab4d2-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:f2d086a3-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:f3567f84-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:f3df3785-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:f463f7e6-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:f4ecfe07-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:f5740858-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:f6023e99-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:f68a816a-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:f714c00b-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:f7986efc-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:f82608fd-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:f8b6fe5e-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:f941640f-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:f9c40190-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:fa4fc6d1-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:fad79472-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:fb644413-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:fbebeaa4-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:fc8e4525-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:fd14b336-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:fd99c1b7-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:fe1bea08-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:fea6c4e9-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:ff35223a-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:ffbdda3b-fdac-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:0045ceec-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:00cf985d-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:015cbd2e-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:01e91eaf-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:02709e30-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:02fa8eb1-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:0386f032-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:0412b573-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:04992384-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:05216655-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:05a8bec6-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:06337297-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:06baa3f8-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:07466939-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:07cf6f5a-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:085da59b-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:08ea2e2c-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:0973d08d-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:09fe845e-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:0a8ba92f-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:0b12da90-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:0ba137e1-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:0c29efe2-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:0cb9fae3-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:0d441274-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:0dd1d385-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:0e597a16-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:0ee69ee7-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:0f6fa508-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:0ffa7fe9-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:1084be8a-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:110a694b-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:11967cac-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:121dfc2d-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:12a7ecae-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:132b4d7f-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:13c91420-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:145093a1-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:14dcce12-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:156278d3-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:15eeb344-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:16728945-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:16f06bd6-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:17844767-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:180fe598-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:18951b29-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:192218ea-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:19afb2eb-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:1a3a8dcc-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:1ace695d-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:1b5a2e9e-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:1be88bef-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:1c72a380-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:1d082cc1-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:1d906f92-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:1e1e7ec3-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:1eaa6b14-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:1f40deb5-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:1fcd1926-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:205ab327-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:20e2cee8-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:21771fa9-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:21fd188a-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:228bc3fb-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:2313dfbc-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:239f7ded-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:242ddb3e-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:24b9a07f-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:25476190-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:25d522a1-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:266554b2-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:26f44e43-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:2781e844-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:280d8675-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:28a384e6-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:2932f3a7-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:29ba2508-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:2a4797f9-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:2aeba02a-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:2b79613b-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:2c032aac-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:2c8b948d-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:2d16485e-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:2da3bb4f-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:2e2dd2e0-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:2eb2e161-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:2f3d9532-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:2fcb2f33-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:30567f44-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:30e021a5-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:316a1226-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:31fb55a7-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:328238e8-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:33065d09-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:3389bdda-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:3411164b-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:349d77cc-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:3524a92d-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:35b21c1e-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:363afb2f-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:36c82000-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:375089e1-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:37d8f3c2-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:386491f3-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:38f38b84-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:397d54f5-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:3a0549a6-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:3a9099b7-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:3b190398-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:3b9f98b9-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:3c256a8a-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:3caff74b-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:3d3af93c-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:3dc4266d-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:3e4675ce-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:3ed3738f-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:3f6134a0-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:3fed6f11-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:40747962-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:4100dae3-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:41879714-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:42111265-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:429a8db6-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:432393d7-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:43abd6a8-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:44309709-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:44b2713a-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:4539547b-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:45c05ecc-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:4646ccdd-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:46d1a7be-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:47733eef-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:47fa7050-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:4884d601-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:4908fa22-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:4998b703-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:4a1f2514-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:4aae45b5-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:4b39bcd6-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:4bcde687-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:4c558d18-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:4ce28ad9-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:4d6e01fa-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:4df4700b-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:4e79095c-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:4efdf0cd-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:4f8ee62e-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:5014df0f-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:509866f0-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:512082b1-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:51ace432-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:52365f83-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:52bcf4a4-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:53495625-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:53ceb2c6-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:5455e427-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:54dbdd08-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:556aaf89-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:55f11d9a-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:56778bab-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:56ff0b2c-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:5783f29d-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:580a399e-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:588c3adf-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:591519f0-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:599a9da1-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:5a1f5e02-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:5ab0c893-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:5b3784c4-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:5bbdf2d5-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:5c4ac986-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:5cd3f6b7-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:5d57f3c8-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:5de40729-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:5e6aea6a-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:5eec9d8b-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:5f763fec-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:5ff92b8d-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:6081474e-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:61098a1f-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:618c27a0-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:62141c51-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:6297cb42-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:631d27e3-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:639cdf34-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:642744e5-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:64acefa6-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:653ef677-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:65c3dde8-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:664988a9-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:66d9458a-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:676be89b-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:67f38f2c-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:687a997d-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:69028e2e-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:698f64df-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:6a181ce0-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:6aa1e651-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:6b2e6ee2-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:6bb7ea33-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:6c3c3564-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:6cc0f5c5-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:6d4c1ec6-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:6dd795e7-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:6e5b6be8-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:6edc0d99-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:6f64777a-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:6fe42ecb-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:706ff40c-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:70f354dd-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:71735a4e-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:71fbc42f-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:727f9a30-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:7312d981-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:739b1c52-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:741b96f3-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:749f45e4-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:7526c565-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:75ad0c66-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:763f6157-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:76c75608-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:774dc419-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:77d4593a-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:78565a7b-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:78db41ec-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:7962252d-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:79e510ce-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:7a6e650f-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:7af08c60-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:7b746261-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:7bfd1a62-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:7c8424b3-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:7d05fee4-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:7d8e68c5-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:7e139e56-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:7e9f1577-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:7f213dc8-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:7fa75db9-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:803063da-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:80b153ab-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:8136893c-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:81bef31d-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:82449dde-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:82ce8e5f-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:83512be0-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:83d7c101-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:845c3342-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:84d95283-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:855bc8f4-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:85e4f625-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:8663c316-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:86e723e7-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:876c5978-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:87f1dd29-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:88795caa-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:88fb84fb-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:8979dcbc-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:8a06654d-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:8a8e59fe-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:8b12f34f-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:8b9c4790-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:8c1dac91-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:8ca55322-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:8d283ec3-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:8daefaf4-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:8e3b0e55-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:8ec23fb6-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:8f4922f7-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:8fcc0e98-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:905318e9-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:90db34aa-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:9162b42b-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:91e79b9c-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:9270a1bd-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:92f3b46e-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:937feedf-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:94009090-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:94881011-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:950ea532-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:959401d3-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:961a21c4-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:96a39d15-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:97280f56-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:97b708e7-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:983c8c98-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:98c36fd9-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:994cc41a-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:99d2e40b-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:9a55f6bc-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:9ad6e68d-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:9b59d22e-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:9be8cbbf-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:9c6cefe0-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:9cf83ff1-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:9d81e252-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:9e0a7343-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:9e8dd414-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:9f17c495-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:9f9c84f6-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:a0262757-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:a0a25c38-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:a125e419-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:a1a9ba1a-fdad-11e1-904f-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <contract xmlns="http://www.nsdl.org/ontologies/relationships#">NTK10</contract>
+            <policy xmlns="http://www.nsdl.org/ontologies/relationships#">policy:public</policy>
+          </rdf:Description>
+        </rdf:RDF>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream CONTROL_GROUP="E" FEDORA_URI="info:fedora/uuid:874d672e-f965-43dd-af6e-c79564268dfd/POLICY"
+    ID="POLICY" STATE="A" VERSIONABLE="false">
+    <foxml:datastreamVersion CREATED="2015-11-27T09:40:10.665Z" ID="POLICY.0" LABEL="" MIMETYPE="application/rdf+xml">
+      <foxml:contentLocation REF="http://kramerius1.ntkcz.cz:8080/fedora/get/policy:public/POLICYDEF" TYPE="URL"/>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+</foxml:digitalObject>

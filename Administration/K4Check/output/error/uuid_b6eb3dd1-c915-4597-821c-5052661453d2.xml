@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<foxml:digitalObject FEDORA_URI="info:fedora/uuid:b6eb3dd1-c915-4597-821c-5052661453d2"
+  PID="uuid:b6eb3dd1-c915-4597-821c-5052661453d2" VERSION="1.1" xmlns:foxml="info:fedora/fedora-system:def/foxml#"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/definitions/1/0/foxml1-1.xsd">
+  <foxml:objectProperties>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#state" VALUE="Active"/>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#label" VALUE="Kupecká bibliotéka [Kniha třetí]. Nauka o kupeckém počtářství Svazek první"/>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#ownerId" VALUE="fedoraAdmin"/>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#createdDate" VALUE="2017-01-16T12:03:50.205Z"/>
+    <foxml:property NAME="info:fedora/fedora-system:def/view#lastModifiedDate" VALUE="2017-02-14T10:07:28.503Z"/>
+  </foxml:objectProperties>
+  <foxml:datastream CONTROL_GROUP="X" FEDORA_URI="info:fedora/uuid:b6eb3dd1-c915-4597-821c-5052661453d2/AUDIT"
+    ID="AUDIT" STATE="A" VERSIONABLE="false">
+    <foxml:datastreamVersion CREATED="2017-01-16T12:03:50.205Z"
+      FORMAT_URI="info:fedora/fedora-system:format/xml.fedora.audit" ID="AUDIT.0" LABEL="Audit Trail for this object" MIMETYPE="text/xml">
+      <foxml:xmlContent>
+        <audit:auditTrail xmlns:audit="info:fedora/fedora-system:def/audit#">
+          <audit:record ID="AUDREC1">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>ingest</audit:action>
+            <audit:componentID/>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2017-01-16T11:07:56.143Z</audit:date>
+            <audit:justification>Initial ingest</audit:justification>
+          </audit:record>
+        </audit:auditTrail>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream CONTROL_GROUP="X" FEDORA_URI="info:fedora/uuid:b6eb3dd1-c915-4597-821c-5052661453d2/DC" ID="DC"
+    STATE="A" VERSIONABLE="false">
+    <foxml:datastreamVersion CREATED="2017-01-16T12:03:50.000Z" FORMAT_URI="http://www.openarchives.org/OAI/2.0/oai_dc/"
+      ID="DC.0" LABEL="Dublin Core Record for this object" MIMETYPE="text/xml" SIZE="799">
+      <foxml:xmlContent>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/"
+          xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+          <dc:title>Kupecká bibliotéka</dc:title>
+          <dc:description>[Kniha třetí]. Nauka o kupeckém počtářství</dc:description>
+          <dc:description>Svazek první</dc:description>
+          <dc:publisher>Tiskem a společným nákladem dra. Edvarda Grégra se spisovatelem</dc:publisher>
+          <dc:type>model:monograph</dc:type>
+          <dc:identifier>uuid:b6eb3dd1-c915-4597-821c-5052661453d2</dc:identifier>
+          <dc:identifier>uuid: b6eb3dd1-c915-4597-821c-5052661453d2</dc:identifier>
+          <dc:rights>policy:public</dc:rights>
+        </oai_dc:dc>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream CONTROL_GROUP="X" FEDORA_URI="info:fedora/uuid:b6eb3dd1-c915-4597-821c-5052661453d2/BIBLIO_MODS"
+    ID="BIBLIO_MODS" STATE="A" VERSIONABLE="false">
+    <foxml:datastreamVersion CREATED="2017-01-16T12:03:50.000Z" FORMAT_URI="http://www.loc.gov/mods/v3"
+      ID="BIBLIO_MODS.0" LABEL="BIBLIO_MODS description of current object" MIMETYPE="text/xml" SIZE="908">
+      <foxml:xmlContent>
+        <mods:modsCollection xmlns:mods="http://www.loc.gov/mods/v3">
+          <mods:mods ID="MODS_TITLE_0001">
+            <mods:titleInfo>
+              <mods:title>Kupecká bibliotéka</mods:title>
+              <mods:partNumber>[Kniha třetí]. Nauka o kupeckém počtářství</mods:partNumber>
+              <mods:partName>Svazek první</mods:partName>
+            </mods:titleInfo>
+            <mods:originInfo>
+              <mods:publisher>Tiskem a společným nákladem dra. Edvarda Grégra se spisovatelem</mods:publisher>
+            </mods:originInfo>
+            <mods:genre>title</mods:genre>
+            <mods:identifier type="uuid">b6eb3dd1-c915-4597-821c-5052661453d2</mods:identifier>
+          </mods:mods>
+        </mods:modsCollection>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream CONTROL_GROUP="E" FEDORA_URI="info:fedora/uuid:b6eb3dd1-c915-4597-821c-5052661453d2/POLICY"
+    ID="POLICY" STATE="A" VERSIONABLE="false">
+    <foxml:datastreamVersion CREATED="2017-01-16T12:03:50.000Z" ID="POLICY.0" LABEL="" MIMETYPE="application/rdf+xml">
+      <foxml:contentLocation REF="http://kramerius1.ntkcz.cz:8080/fedora/get/policy:public/POLICYDEF" TYPE="URL"/>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream CONTROL_GROUP="X" FEDORA_URI="info:fedora/uuid:b6eb3dd1-c915-4597-821c-5052661453d2/RELS-EXT"
+    ID="RELS-EXT" STATE="A" VERSIONABLE="false">
+    <foxml:datastreamVersion CREATED="2017-02-14T10:07:28.503Z" FORMAT_URI="info:fedora/fedora-system:FedoraRELSExt-1.0"
+      ID="RELS-EXT.8" LABEL="RDF Statements about this object" MIMETYPE="application/rdf+xml" SIZE="895">
+      <foxml:xmlContent>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+          <rdf:Description rdf:about="info:fedora/uuid:b6eb3dd1-c915-4597-821c-5052661453d2">
+            <hasModel rdf:resource="info:fedora/model:monograph" xmlns="info:fedora/fedora-system:def/model#"/>
+            <itemID xmlns="http://www.openarchives.org/OAI/2.0/">uuid:b6eb3dd1-c915-4597-821c-5052661453d2</itemID>
+            <policy xmlns="http://www.nsdl.org/ontologies/relationships#">policy:public</policy>
+            <hasUnit rdf:resource="info:fedora/uuid:dbb71311-7471-46d6-904b-2ac62add3cfa" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasUnit rdf:resource="info:fedora/uuid:c8e48df0-3535-4a49-899d-dd1cd1a92a95" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <rdf:isMemberOfCollection rdf:resource="info:fedora/vc:3bc3d470-4d50-4dab-92fc-90283f9193cb"/>
+          </rdf:Description>
+        </rdf:RDF>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+</foxml:digitalObject>

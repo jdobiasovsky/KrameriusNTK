@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<foxml:digitalObject FEDORA_URI="info:fedora/uuid:d4bc57ea-f92e-4602-a8da-8379b54ab883"
+  PID="uuid:d4bc57ea-f92e-4602-a8da-8379b54ab883" VERSION="1.1" xmlns:foxml="info:fedora/fedora-system:def/foxml#"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/definitions/1/0/foxml1-1.xsd">
+  <foxml:objectProperties>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#state" VALUE="Active"/>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#label" VALUE="O logarithmické transcendentě"/>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#ownerId" VALUE="fedoraAdmin"/>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#createdDate" VALUE="2016-12-12T12:44:06.300Z"/>
+    <foxml:property NAME="info:fedora/fedora-system:def/view#lastModifiedDate" VALUE="2017-05-10T15:04:14.558Z"/>
+  </foxml:objectProperties>
+  <foxml:datastream CONTROL_GROUP="X" FEDORA_URI="info:fedora/uuid:d4bc57ea-f92e-4602-a8da-8379b54ab883/AUDIT"
+    ID="AUDIT" STATE="A" VERSIONABLE="false">
+    <foxml:datastreamVersion CREATED="2016-12-12T12:44:06.300Z"
+      FORMAT_URI="info:fedora/fedora-system:format/xml.fedora.audit" ID="AUDIT.0" LABEL="Audit Trail for this object" MIMETYPE="text/xml">
+      <foxml:xmlContent>
+        <audit:auditTrail xmlns:audit="info:fedora/fedora-system:def/audit#">
+          <audit:record ID="AUDREC1">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>ingest</audit:action>
+            <audit:componentID/>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2016-12-12T11:46:44.318Z</audit:date>
+            <audit:justification>Initial ingest</audit:justification>
+          </audit:record>
+          <audit:record ID="AUDREC2">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>modifyDatastreamByValue</audit:action>
+            <audit:componentID>DC</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2017-01-12T09:32:18.226Z</audit:date>
+            <audit:justification/>
+          </audit:record>
+          <audit:record ID="AUDREC3">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>purgeDatastream</audit:action>
+            <audit:componentID>POLICY</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2017-01-12T09:32:18.525Z</audit:date>
+            <audit:justification> . . . Purged datastream (ID=POLICY), versions ranging from the beginning of time to the end of time.  This resulted in the permanent removal of 1 datastream version(s) (2016-12-12T13:44:06.000Z) and all associated audit records.</audit:justification>
+          </audit:record>
+          <audit:record ID="AUDREC4">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>addDatastream</audit:action>
+            <audit:componentID>POLICY</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2017-01-12T09:32:18.576Z</audit:date>
+            <audit:justification/>
+          </audit:record>
+          <audit:record ID="AUDREC5">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>ingest</audit:action>
+            <audit:componentID/>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2017-05-10T15:04:14.558Z</audit:date>
+            <audit:justification>Initial ingest</audit:justification>
+          </audit:record>
+        </audit:auditTrail>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream CONTROL_GROUP="X" FEDORA_URI="info:fedora/uuid:d4bc57ea-f92e-4602-a8da-8379b54ab883/BIBLIO_MODS"
+    ID="BIBLIO_MODS" STATE="A" VERSIONABLE="false">
+    <foxml:datastreamVersion CREATED="2016-12-12T12:44:06.000Z" FORMAT_URI="http://www.loc.gov/mods/v3"
+      ID="BIBLIO_MODS.0" LABEL="BIBLIO_MODS description of current object" MIMETYPE="text/xml" SIZE="3675">
+      <foxml:xmlContent>
+        <mods:modsCollection xmlns:mods="http://www.loc.gov/mods/v3">
+          <mods:mods ID="MODS_VOLUME_0001">
+            <mods:titleInfo>
+              <mods:title>O logarithmické transcendentě</mods:title>
+            </mods:titleInfo>
+            <mods:name type="personal" usage="primary">
+              <mods:namePart>Pánek, Augustin</mods:namePart>
+            </mods:name>
+            <mods:name type="corporate">
+              <mods:namePart>Jednota českých matematiků (Praha)</mods:namePart>
+            </mods:name>
+            <mods:name type="corporate">
+              <mods:namePart>Eduard Grégr (Praha) ((tiskař, nakladatel, knihkupec))</mods:namePart>
+            </mods:name>
+            <mods:typeOfResource>text</mods:typeOfResource>
+            <mods:originInfo>
+              <mods:place>
+                <mods:placeTerm authority="marccountry" type="code">xr</mods:placeTerm>
+              </mods:place>
+              <mods:place>
+                <mods:placeTerm type="text">V Praze</mods:placeTerm>
+              </mods:place>
+              <mods:publisher>Nákladem Jednoty českých matematiků. Tiskem Ed. Grégra</mods:publisher>
+              <mods:dateIssued>1874</mods:dateIssued>
+              <mods:issuance>single unit</mods:issuance>
+            </mods:originInfo>
+            <mods:language>
+              <mods:languageTerm authority="iso639-2b" type="code">cze</mods:languageTerm>
+            </mods:language>
+            <mods:physicalDescription>
+              <mods:form authority="marcform">print</mods:form>
+              <mods:extent>7 s. ; 8vo (23 cm)</mods:extent>
+            </mods:physicalDescription>
+            <mods:note type="statement of responsibility">Podává Augustin Pánek</mods:note>
+            <mods:note>Bez tit. listu. Identif. údaje zjištěny na str. 7</mods:note>
+            <mods:note>Složka tištěných stran uložená v kancelářské obálce (poškozeno)</mods:note>
+            <mods:note type="ownership">Na str. 1 a na rubu posledního listu kulaté razítko Bibl. d. k. k. polytechn. Institute - Knih. c. k. polytechn. ústavů</mods:note>
+            <mods:subject>
+              <mods:topic>algebra</mods:topic>
+              <mods:topic>ma</mods:topic>
+            </mods:subject>
+            <mods:classification authority="udc">512</mods:classification>
+            <mods:classification authority="">IV.B.b)</mods:classification>
+            <mods:location>
+              <mods:physicalLocation authority="siglaADR">ABA013</mods:physicalLocation>
+              <mods:shelfLocator>A 837</mods:shelfLocator>
+            </mods:location>
+            <mods:recordInfo>
+              <mods:descriptionStandard>aacr</mods:descriptionStandard>
+              <mods:recordContentSource authority="marcorg">ABA013</mods:recordContentSource>
+              <mods:recordCreationDate encoding="iso8601">1997-09-02T00:00:00Z</mods:recordCreationDate>
+              <mods:recordChangeDate encoding="iso8601">2005-05-31T09:58:23Z</mods:recordChangeDate>
+              <mods:recordIdentifier source="CZ PrSTK">000604582</mods:recordIdentifier>
+              <mods:recordOrigin>machine generated</mods:recordOrigin>
+              <mods:languageOfCataloging>
+                <mods:languageTerm authority="iso639-2b" type="code">cze</mods:languageTerm>
+              </mods:languageOfCataloging>
+            </mods:recordInfo>
+            <mods:identifier type="uuid">d4bc57ea-f92e-4602-a8da-8379b54ab883</mods:identifier>
+            <mods:identifier type="urnnbn">urn:nbn:cz:aba013-0001lo</mods:identifier>
+            <mods:genre>volume</mods:genre>
+          </mods:mods>
+        </mods:modsCollection>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream CONTROL_GROUP="X" FEDORA_URI="info:fedora/uuid:d4bc57ea-f92e-4602-a8da-8379b54ab883/DC" ID="DC"
+    STATE="A" VERSIONABLE="false">
+    <foxml:datastreamVersion CREATED="2017-01-12T09:32:18.226Z" FORMAT_URI="http://www.openarchives.org/OAI/2.0/oai_dc/"
+      ID="DC.1" LABEL="Dublin Core Record for this object" MIMETYPE="text/xml" SIZE="1817">
+      <foxml:xmlContent>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/"
+          xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+          <dc:title>O logarithmické transcendentě</dc:title>
+          <dc:creator>Pánek, Augustin</dc:creator>
+          <dc:creator>Jednota českých matematiků (Praha)</dc:creator>
+          <dc:creator>Eduard Grégr (Praha) ((tiskař, nakladatel, knihkupec))</dc:creator>
+          <dc:subject>udc:512</dc:subject>
+          <dc:subject>:IV.B.b)</dc:subject>
+          <dc:subject>algebra</dc:subject>
+          <dc:subject>ma</dc:subject>
+          <dc:description>(Statement of Responsibility)  Podává Augustin Pánek</dc:description>
+          <dc:description>Bez tit. listu. Identif. údaje zjištěny na str. 7</dc:description>
+          <dc:description>Složka tištěných stran uložená v kancelářské obálce (poškozeno)</dc:description>
+          <dc:description>(Ownership)  Na str. 1 a na rubu posledního listu kulaté razítko Bibl. d. k. k. polytechn. Institute - Knih. c. k. polytechn. ústavů</dc:description>
+          <dc:publisher>Nákladem Jednoty českých matematiků. Tiskem Ed. Grégra</dc:publisher>
+          <dc:date>1874</dc:date>
+          <dc:type>model:monograph</dc:type>
+          <dc:type>text</dc:type>
+          <dc:format>print</dc:format>
+          <dc:format>7 s. ; 8vo (23 cm)</dc:format>
+          <dc:identifier>uuid:d4bc57ea-f92e-4602-a8da-8379b54ab883</dc:identifier>
+          <dc:identifier>uuid: d4bc57ea-f92e-4602-a8da-8379b54ab883</dc:identifier>
+          <dc:identifier>urnnbn: urn:nbn:cz:aba013-0001lo</dc:identifier>
+          <dc:source>ABA013</dc:source>
+          <dc:source>A 837</dc:source>
+          <dc:language>cze</dc:language>
+          <dc:coverage>xr</dc:coverage>
+          <dc:coverage>V Praze</dc:coverage>
+          <dc:rights>policy:public</dc:rights>
+        </oai_dc:dc>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream CONTROL_GROUP="E" FEDORA_URI="info:fedora/uuid:d4bc57ea-f92e-4602-a8da-8379b54ab883/POLICY"
+    ID="POLICY" STATE="A" VERSIONABLE="false">
+    <foxml:datastreamVersion CREATED="2017-01-12T09:32:18.576Z" ID="POLICY.0" LABEL="" MIMETYPE="application/rdf+xml">
+      <foxml:contentLocation REF="http://kramerius1.ntkcz.cz:8080/fedora/get/policy:public/POLICYDEF" TYPE="URL"/>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream CONTROL_GROUP="X" FEDORA_URI="info:fedora/uuid:d4bc57ea-f92e-4602-a8da-8379b54ab883/RELS-EXT"
+    ID="RELS-EXT" STATE="A" VERSIONABLE="false">
+    <foxml:datastreamVersion CREATED="2017-01-30T12:48:01.867Z" FORMAT_URI="info:fedora/fedora-system:FedoraRELSExt-1.0"
+      ID="RELS-EXT.3" LABEL="RDF Statements about this object" MIMETYPE="application/rdf+xml" SIZE="1917">
+      <foxml:xmlContent>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+          <rdf:Description rdf:about="info:fedora/uuid:d4bc57ea-f92e-4602-a8da-8379b54ab883">
+            <hasModel rdf:resource="info:fedora/model:monograph" xmlns="info:fedora/fedora-system:def/model#"/>
+            <itemID xmlns="http://www.openarchives.org/OAI/2.0/">uuid:d4bc57ea-f92e-4602-a8da-8379b54ab883</itemID>
+            <hasPage rdf:resource="info:fedora/uuid:4967c6a1-c060-11e6-855e-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:4967c6a2-c060-11e6-855e-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:4967c6a3-c060-11e6-855e-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:4967c6a4-c060-11e6-855e-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:4967c6a5-c060-11e6-855e-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:4967c6a6-c060-11e6-855e-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:4967c6a7-c060-11e6-855e-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:4967c6a8-c060-11e6-855e-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <policy xmlns="http://www.nsdl.org/ontologies/relationships#">policy:public</policy>
+            <rdf:isMemberOfCollection rdf:resource="info:fedora/vc:3bc3d470-4d50-4dab-92fc-90283f9193cb"/>
+          </rdf:Description>
+        </rdf:RDF>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+</foxml:digitalObject>

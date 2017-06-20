@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<foxml:digitalObject FEDORA_URI="info:fedora/uuid:fad3c3fb-f169-46e8-b2b7-31061d0a08c1"
+  PID="uuid:fad3c3fb-f169-46e8-b2b7-31061d0a08c1" VERSION="1.1" xmlns:foxml="info:fedora/fedora-system:def/foxml#"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/definitions/1/0/foxml1-1.xsd">
+  <foxml:objectProperties>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#state" VALUE="Active"/>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#label" VALUE="Über das formale Bildungsgesetz der Coefficienten des Quotienten zweier Potenz-Reihen"/>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#ownerId" VALUE="fedoraAdmin"/>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#createdDate" VALUE="2016-12-12T14:59:44.203Z"/>
+    <foxml:property NAME="info:fedora/fedora-system:def/view#lastModifiedDate" VALUE="2017-01-30T11:18:14.668Z"/>
+  </foxml:objectProperties>
+  <foxml:datastream CONTROL_GROUP="X" FEDORA_URI="info:fedora/uuid:fad3c3fb-f169-46e8-b2b7-31061d0a08c1/AUDIT"
+    ID="AUDIT" STATE="A" VERSIONABLE="false">
+    <foxml:datastreamVersion CREATED="2016-12-12T14:59:44.203Z"
+      FORMAT_URI="info:fedora/fedora-system:format/xml.fedora.audit" ID="AUDIT.0" LABEL="Audit Trail for this object" MIMETYPE="text/xml">
+      <foxml:xmlContent>
+        <audit:auditTrail xmlns:audit="info:fedora/fedora-system:def/audit#">
+          <audit:record ID="AUDREC1">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>ingest</audit:action>
+            <audit:componentID/>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2016-12-12T14:04:01.562Z</audit:date>
+            <audit:justification>Initial ingest</audit:justification>
+          </audit:record>
+          <audit:record ID="AUDREC2">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>modifyDatastreamByValue</audit:action>
+            <audit:componentID>DC</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2017-01-11T14:37:37.001Z</audit:date>
+            <audit:justification/>
+          </audit:record>
+          <audit:record ID="AUDREC3">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>purgeDatastream</audit:action>
+            <audit:componentID>POLICY</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2017-01-11T14:37:37.656Z</audit:date>
+            <audit:justification> . . . Purged datastream (ID=POLICY), versions ranging from the beginning of time to the end of time.  This resulted in the permanent removal of 1 datastream version(s) (2016-12-12T15:59:44.000Z) and all associated audit records.</audit:justification>
+          </audit:record>
+          <audit:record ID="AUDREC4">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>addDatastream</audit:action>
+            <audit:componentID>POLICY</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2017-01-11T14:37:37.794Z</audit:date>
+            <audit:justification/>
+          </audit:record>
+        </audit:auditTrail>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream CONTROL_GROUP="X" FEDORA_URI="info:fedora/uuid:fad3c3fb-f169-46e8-b2b7-31061d0a08c1/BIBLIO_MODS"
+    ID="BIBLIO_MODS" STATE="A" VERSIONABLE="false">
+    <foxml:datastreamVersion CREATED="2016-12-12T14:59:44.000Z" FORMAT_URI="http://www.loc.gov/mods/v3"
+      ID="BIBLIO_MODS.0" LABEL="BIBLIO_MODS description of current object" MIMETYPE="text/xml" SIZE="4110">
+      <foxml:xmlContent>
+        <mods:modsCollection xmlns:mods="http://www.loc.gov/mods/v3">
+          <mods:mods ID="MODS_VOLUME_0001">
+            <mods:titleInfo>
+              <mods:title>Über das formale Bildungsgesetz der Coefficienten des Quotienten zweier Potenz-Reihen</mods:title>
+            </mods:titleInfo>
+            <mods:name type="personal" usage="primary">
+              <mods:namePart>Ježek, Otakar</mods:namePart>
+            </mods:name>
+            <mods:typeOfResource>text</mods:typeOfResource>
+            <mods:originInfo>
+              <mods:place>
+                <mods:placeTerm authority="marccountry" type="code">xr</mods:placeTerm>
+              </mods:place>
+              <mods:place>
+                <mods:placeTerm type="text">Prag</mods:placeTerm>
+              </mods:place>
+              <mods:publisher>Verlag der kön. böhm. Gesellschaft der Wissenschaften</mods:publisher>
+              <mods:dateIssued>1884</mods:dateIssued>
+              <mods:issuance>single unit</mods:issuance>
+            </mods:originInfo>
+            <mods:language>
+              <mods:languageTerm authority="iso639-2b" type="code">ger</mods:languageTerm>
+            </mods:language>
+            <mods:physicalDescription>
+              <mods:form authority="marcform">print</mods:form>
+              <mods:extent>17 s. : 3 tabulky ; 21 cm</mods:extent>
+            </mods:physicalDescription>
+            <mods:targetAudience authority="marctarget">specialized</mods:targetAudience>
+            <mods:note type="statement of responsibility">von Otakar Ježek</mods:note>
+            <mods:note>Aus den "Sitzungsberichten der königl. böhm. Gesellschaft der Wissenschaften". Mitgetheilt am 4. April 1884</mods:note>
+            <mods:note type="ownership">Na tit. s. kulaté razítko Bibliothek der k. k. technischen Hochschulen in Prag - Knihovna c. k. vysokých škol technických v Praze CZ-PrSTK</mods:note>
+            <mods:subject>
+              <mods:topic>geometrie</mods:topic>
+              <mods:topic>ma</mods:topic>
+            </mods:subject>
+            <mods:classification authority="udc">514</mods:classification>
+            <mods:location>
+              <mods:physicalLocation authority="siglaADR">ABA013</mods:physicalLocation>
+              <mods:shelfLocator>A 1090</mods:shelfLocator>
+            </mods:location>
+            <mods:recordInfo>
+              <mods:descriptionStandard>aacr</mods:descriptionStandard>
+              <mods:recordContentSource authority="marcorg">ABA013</mods:recordContentSource>
+              <mods:recordCreationDate encoding="iso8601">1997-09-02T00:00:00Z</mods:recordCreationDate>
+              <mods:recordChangeDate encoding="iso8601">2015-11-26T10:09:19Z</mods:recordChangeDate>
+              <mods:recordIdentifier source="CZ PrSTK">000612304</mods:recordIdentifier>
+              <mods:recordOrigin>machine generated</mods:recordOrigin>
+              <mods:languageOfCataloging>
+                <mods:languageTerm authority="iso639-2b" type="code">cze</mods:languageTerm>
+              </mods:languageOfCataloging>
+            </mods:recordInfo>
+            <mods:identifier type="uuid">fad3c3fb-f169-46e8-b2b7-31061d0a08c1</mods:identifier>
+            <mods:identifier type="urnnbn">urn:nbn:cz:aba013-0001lf</mods:identifier>
+            <mods:genre>volume</mods:genre>
+          </mods:mods>
+        </mods:modsCollection>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream CONTROL_GROUP="X" FEDORA_URI="info:fedora/uuid:fad3c3fb-f169-46e8-b2b7-31061d0a08c1/DC" ID="DC"
+    STATE="A" VERSIONABLE="false">
+    <foxml:datastreamVersion CREATED="2017-01-11T14:37:37.001Z" FORMAT_URI="http://www.openarchives.org/OAI/2.0/oai_dc/"
+      ID="DC.1" LABEL="Dublin Core Record for this object" MIMETYPE="text/xml" SIZE="1673">
+      <foxml:xmlContent>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/"
+          xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+          <dc:title>Über das formale Bildungsgesetz der Coefficienten des Quotienten zweier Potenz-Reihen</dc:title>
+          <dc:creator>Ježek, Otakar</dc:creator>
+          <dc:subject>udc:514</dc:subject>
+          <dc:subject>geometrie</dc:subject>
+          <dc:subject>ma</dc:subject>
+          <dc:description>(Statement of Responsibility)  von Otakar Ježek</dc:description>
+          <dc:description>Aus den &amp;amp;quot;Sitzungsberichten der königl. böhm. Gesellschaft der Wissenschaften&amp;amp;quot;. Mitgetheilt am 4. April 1884</dc:description>
+          <dc:description>(Ownership)  Na tit. s. kulaté razítko Bibliothek der k. k. technischen Hochschulen in Prag - Knihovna c. k. vysokých škol technických v Praze CZ-PrSTK</dc:description>
+          <dc:publisher>Verlag der kön. böhm. Gesellschaft der Wissenschaften</dc:publisher>
+          <dc:date>1884</dc:date>
+          <dc:type>model:monograph</dc:type>
+          <dc:type>text</dc:type>
+          <dc:format>print</dc:format>
+          <dc:format>17 s. : 3 tabulky ; 21 cm</dc:format>
+          <dc:identifier>uuid:fad3c3fb-f169-46e8-b2b7-31061d0a08c1</dc:identifier>
+          <dc:identifier>uuid: fad3c3fb-f169-46e8-b2b7-31061d0a08c1</dc:identifier>
+          <dc:identifier>urnnbn: urn:nbn:cz:aba013-0001lf</dc:identifier>
+          <dc:source>ABA013</dc:source>
+          <dc:source>A 1090</dc:source>
+          <dc:language>ger</dc:language>
+          <dc:coverage>xr</dc:coverage>
+          <dc:coverage>Prag</dc:coverage>
+          <dc:rights>policy:public</dc:rights>
+        </oai_dc:dc>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream CONTROL_GROUP="E" FEDORA_URI="info:fedora/uuid:fad3c3fb-f169-46e8-b2b7-31061d0a08c1/POLICY"
+    ID="POLICY" STATE="A" VERSIONABLE="false">
+    <foxml:datastreamVersion CREATED="2017-01-11T14:37:37.794Z" ID="POLICY.0" LABEL="" MIMETYPE="application/rdf+xml">
+      <foxml:contentLocation REF="http://kramerius1.ntkcz.cz:8080/fedora/get/policy:public/POLICYDEF" TYPE="URL"/>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream CONTROL_GROUP="X" FEDORA_URI="info:fedora/uuid:fad3c3fb-f169-46e8-b2b7-31061d0a08c1/RELS-EXT"
+    ID="RELS-EXT" STATE="A" VERSIONABLE="false">
+    <foxml:datastreamVersion CREATED="2017-01-30T11:18:14.668Z" FORMAT_URI="info:fedora/fedora-system:FedoraRELSExt-1.0"
+      ID="RELS-EXT.13" LABEL="RDF Statements about this object" MIMETYPE="application/rdf+xml" SIZE="3487">
+      <foxml:xmlContent>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+          <rdf:Description rdf:about="info:fedora/uuid:fad3c3fb-f169-46e8-b2b7-31061d0a08c1">
+            <hasModel rdf:resource="info:fedora/model:monograph" xmlns="info:fedora/fedora-system:def/model#"/>
+            <itemID xmlns="http://www.openarchives.org/OAI/2.0/">uuid:fad3c3fb-f169-46e8-b2b7-31061d0a08c1</itemID>
+            <hasPage rdf:resource="info:fedora/uuid:3bf4cdc5-c073-11e6-ae7e-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:3bf4cdc6-c073-11e6-ae7e-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:3bf4cdc7-c073-11e6-ae7e-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:3bf4cdc8-c073-11e6-ae7e-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:3bf4cdc9-c073-11e6-ae7e-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:3bf4cdca-c073-11e6-ae7e-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:3bf4cdcb-c073-11e6-ae7e-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:3bf4cdcc-c073-11e6-ae7e-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:3bf4cdcd-c073-11e6-ae7e-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:3bf4cdce-c073-11e6-ae7e-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:3bf4cdcf-c073-11e6-ae7e-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:3bf4cdd0-c073-11e6-ae7e-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:3bf4cdd1-c073-11e6-ae7e-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:3bf4cdd2-c073-11e6-ae7e-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:3bf4cdd3-c073-11e6-ae7e-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:3bf4cdd4-c073-11e6-ae7e-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:3bf4cdd5-c073-11e6-ae7e-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:3bf4cdd6-c073-11e6-ae7e-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:3bf4cdd7-c073-11e6-ae7e-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <hasPage rdf:resource="info:fedora/uuid:3bf4cdd8-c073-11e6-ae7e-001b63bd97ba" xmlns="http://www.nsdl.org/ontologies/relationships#"/>
+            <policy xmlns="http://www.nsdl.org/ontologies/relationships#">policy:public</policy>
+            <rdf:isMemberOfCollection rdf:resource="info:fedora/vc:3bc3d470-4d50-4dab-92fc-90283f9193cb"/>
+          </rdf:Description>
+        </rdf:RDF>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+</foxml:digitalObject>

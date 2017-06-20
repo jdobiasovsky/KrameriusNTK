@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<foxml:digitalObject FEDORA_URI="info:fedora/uuid:922c1b50-dc2d-11e3-9c1a-0800200c9a66"
+  PID="uuid:922c1b50-dc2d-11e3-9c1a-0800200c9a66" VERSION="1.1" xmlns:foxml="info:fedora/fedora-system:def/foxml#"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/definitions/1/0/foxml1-1.xsd">
+  <foxml:objectProperties>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#state" VALUE="Active"/>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#label" VALUE="   Josef Tomáš Suk   "/>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#ownerId" VALUE="fedoraAdmin"/>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#createdDate" VALUE="2014-05-15T15:38:06.890Z"/>
+    <foxml:property NAME="info:fedora/fedora-system:def/view#lastModifiedDate" VALUE="2017-05-09T07:53:01.630Z"/>
+  </foxml:objectProperties>
+  <foxml:datastream CONTROL_GROUP="X" FEDORA_URI="info:fedora/uuid:922c1b50-dc2d-11e3-9c1a-0800200c9a66/AUDIT"
+    ID="AUDIT" STATE="A" VERSIONABLE="false">
+    <foxml:datastreamVersion CREATED="2014-05-15T15:38:06.890Z"
+      FORMAT_URI="info:fedora/fedora-system:format/xml.fedora.audit" ID="AUDIT.0" LABEL="Audit Trail for this object" MIMETYPE="text/xml">
+      <foxml:xmlContent>
+        <audit:auditTrail xmlns:audit="info:fedora/fedora-system:def/audit#">
+          <audit:record ID="AUDREC1">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>ingest</audit:action>
+            <audit:componentID/>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2015-11-20T02:54:15.044Z</audit:date>
+            <audit:justification>Initial ingest</audit:justification>
+          </audit:record>
+          <audit:record ID="AUDREC2">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>ingest</audit:action>
+            <audit:componentID/>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2017-05-09T07:53:01.630Z</audit:date>
+            <audit:justification>Initial ingest</audit:justification>
+          </audit:record>
+        </audit:auditTrail>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream CONTROL_GROUP="X" FEDORA_URI="info:fedora/uuid:922c1b50-dc2d-11e3-9c1a-0800200c9a66/DC" ID="DC"
+    STATE="A" VERSIONABLE="false">
+    <foxml:datastreamVersion CREATED="2014-05-15T15:38:06.000Z" FORMAT_URI="http://www.openarchives.org/OAI/2.0/oai_dc/"
+      ID="DC.0" LABEL="Dublin Core Record for this object" MIMETYPE="text/xml" SIZE="797">
+      <foxml:xmlContent>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/"
+          xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+          <dc:title>Josef Tomáš Suk</dc:title>
+          <dc:creator>Bělohoubek Antonín</dc:creator>
+          <dc:subject>udc:929</dc:subject>
+          <dc:subject>udc:930</dc:subject>
+          <dc:subject>udc:663</dc:subject>
+          <dc:publisher>J.B. Pichl a spol.</dc:publisher>
+          <dc:date>1885</dc:date>
+          <dc:type>model:monograph</dc:type>
+          <dc:identifier>uuid:922c1b50-dc2d-11e3-9c1a-0800200c9a66</dc:identifier>
+          <dc:identifier>contract:NTK14</dc:identifier>
+          <dc:language>cze</dc:language>
+          <dc:rights>policy:public</dc:rights>
+        </oai_dc:dc>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream CONTROL_GROUP="X" FEDORA_URI="info:fedora/uuid:922c1b50-dc2d-11e3-9c1a-0800200c9a66/BIBLIO_MODS"
+    ID="BIBLIO_MODS" STATE="A" VERSIONABLE="false">
+    <foxml:datastreamVersion CREATED="2014-05-15T15:38:06.000Z" FORMAT_URI="http://www.loc.gov/mods/v3"
+      ID="BIBLIO_MODS.0" LABEL="BIBLIO_MODS description of current object" MIMETYPE="text/xml" SIZE="3083">
+      <foxml:xmlContent>
+        <mods:modsCollection xmlns:mods="http://www.loc.gov/mods/v3">
+          <mods:mods version="3.4">
+            <mods:identifier type="urn">922c1b50-dc2d-11e3-9c1a-0800200c9a66</mods:identifier>
+            <mods:identifier type="isbn"/>
+            <mods:titleInfo>
+              <mods:title>
+  Josef Tomáš Suk
+  </mods:title>
+              <mods:subTitle>náčrtek životopisný</mods:subTitle>
+            </mods:titleInfo>
+            <mods:subject/>
+            <mods:location>
+              <mods:physicalLocation>ABA013</mods:physicalLocation>
+              <mods:shelfLocator>C 1585</mods:shelfLocator>
+            </mods:location>
+            <mods:name type="personal">
+              <mods:namePart type="family">Bělohoubek</mods:namePart>
+              <mods:namePart type="given">Antonín</mods:namePart>
+              <mods:role>
+                <mods:roleTerm type="code">cre</mods:roleTerm>
+                <mods:roleTerm type="text">Author</mods:roleTerm>
+              </mods:role>
+            </mods:name>
+            <mods:typeOfResource>text</mods:typeOfResource>
+            <mods:recordInfo>
+              <mods:recordIdentifier source="CZ PrSTK">000606043</mods:recordIdentifier>
+            </mods:recordInfo>
+            <mods:originInfo transliteration="publisher">
+              <mods:place>
+                <mods:placeTerm type="text">V Praze</mods:placeTerm>
+              </mods:place>
+              <mods:publisher>J.B. Pichl a spol.</mods:publisher>
+              <mods:dateIssued>1885</mods:dateIssued>
+            </mods:originInfo>
+            <mods:originInfo>
+              <mods:issuance>monographic</mods:issuance>
+            </mods:originInfo>
+            <mods:language>
+              <mods:languageTerm authority="iso639-2b" type="code">cze</mods:languageTerm>
+            </mods:language>
+            <mods:physicalDescription>
+              <mods:extent>25 s.</mods:extent>
+              <mods:note>Název z obálky; Otisk z třetího ročníku Pivovarských listů; Na frontispisu je podobizna J.T. Suka s faksimile podpisu; Na rubu front. a na s. 1 kulaté špatně čitelné razítko Bibl. d. k.k. techn. Hochschulen - Knihovna c.k. vysokých škol techn. Na obálce nahoře rukopis věnování autora c.k. české vysoké škole technické (část rukopisu je přelepena štítkem se signaturou)</mods:note>
+            </mods:physicalDescription>
+            <mods:physicalDescription>
+              <mods:note type="action"/>
+              <mods:note type="preservationStateOfArt"/>
+            </mods:physicalDescription>
+            <mods:classification authority="ddc"/>
+            <mods:classification authority="udc">929</mods:classification>
+            <mods:classification authority="ddc"/>
+            <mods:classification authority="udc">930</mods:classification>
+            <mods:classification authority="ddc"/>
+            <mods:classification authority="udc">663</mods:classification>
+          </mods:mods>
+        </mods:modsCollection>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream CONTROL_GROUP="X" FEDORA_URI="info:fedora/uuid:922c1b50-dc2d-11e3-9c1a-0800200c9a66/RELS-EXT"
+    ID="RELS-EXT" STATE="A" VERSIONABLE="false">
+    <foxml:datastreamVersion CREATED="2014-05-15T15:38:06.000Z" FORMAT_URI="info:fedora/fedora-system:FedoraRELSExt-1.0"
+      ID="RELS-EXT.0" LABEL="RDF Statements about this object" MIMETYPE="application/rdf+xml" SIZE="3951">
+      <foxml:xmlContent>
+        <rdf:RDF xmlns:fedora-model="info:fedora/fedora-system:def/model#"
+          xmlns:kramerius="http://www.nsdl.org/ontologies/relationships#"
+          xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+          <rdf:Description rdf:about="info:fedora/uuid:922c1b50-dc2d-11e3-9c1a-0800200c9a66">
+            <fedora-model:hasModel rdf:resource="info:fedora/model:monograph"/>
+            <oai:itemID>uuid:922c1b50-dc2d-11e3-9c1a-0800200c9a66</oai:itemID>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:1045a0f5-dc36-11e3-93f7-001b63bd97ba"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:11a7c906-dc36-11e3-93f7-001b63bd97ba"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:1271cfc7-dc36-11e3-93f7-001b63bd97ba"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:132e6908-dc36-11e3-93f7-001b63bd97ba"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:13f7d389-dc36-11e3-93f7-001b63bd97ba"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:14b61a7a-dc36-11e3-93f7-001b63bd97ba"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:1585033b-dc36-11e3-93f7-001b63bd97ba"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:167137fc-dc36-11e3-93f7-001b63bd97ba"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:172f09bd-dc36-11e3-93f7-001b63bd97ba"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:17ef4c7e-dc36-11e3-93f7-001b63bd97ba"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:18ae56bf-dc36-11e3-93f7-001b63bd97ba"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:196b1710-dc36-11e3-93f7-001b63bd97ba"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:1a24a311-dc36-11e3-93f7-001b63bd97ba"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:1ae0ee32-dc36-11e3-93f7-001b63bd97ba"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:1ba1cd33-dc36-11e3-93f7-001b63bd97ba"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:1c7a04c4-dc36-11e3-93f7-001b63bd97ba"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:1d52ffa5-dc36-11e3-93f7-001b63bd97ba"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:1e2d8126-dc36-11e3-93f7-001b63bd97ba"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:1eea8f97-dc36-11e3-93f7-001b63bd97ba"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:1fa68c98-dc36-11e3-93f7-001b63bd97ba"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:20628999-dc36-11e3-93f7-001b63bd97ba"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:212e3e0a-dc36-11e3-93f7-001b63bd97ba"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:21ef441b-dc36-11e3-93f7-001b63bd97ba"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:22a8f72c-dc36-11e3-93f7-001b63bd97ba"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:2371503d-dc36-11e3-93f7-001b63bd97ba"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:2430f6be-dc36-11e3-93f7-001b63bd97ba"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:24ebbb3f-dc36-11e3-93f7-001b63bd97ba"/>
+            <kramerius:contract>NTK14</kramerius:contract>
+            <kramerius:policy>policy:public</kramerius:policy>
+          </rdf:Description>
+        </rdf:RDF>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream CONTROL_GROUP="E" FEDORA_URI="info:fedora/uuid:922c1b50-dc2d-11e3-9c1a-0800200c9a66/POLICY"
+    ID="POLICY" STATE="A" VERSIONABLE="false">
+    <foxml:datastreamVersion CREATED="2014-05-15T15:38:06.000Z" ID="POLICY.0" LABEL="" MIMETYPE="application/rdf+xml">
+      <foxml:contentLocation REF="http://kramerius1.ntkcz.cz:8080/fedora/get/policy:public/POLICYDEF" TYPE="URL"/>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+</foxml:digitalObject>

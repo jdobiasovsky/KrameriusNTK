@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<foxml:digitalObject FEDORA_URI="info:fedora/uuid:0ff9c946-c898-4ffc-8a72-e1418f43fe44"
+  PID="uuid:0ff9c946-c898-4ffc-8a72-e1418f43fe44" VERSION="1.1" xmlns:foxml="info:fedora/fedora-system:def/foxml#"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/definitions/1/0/foxml1-1.xsd">
+  <foxml:objectProperties>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#state" VALUE="Active"/>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#label" VALUE="Diskrétní matematika"/>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#ownerId" VALUE="fedoraAdmin"/>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#createdDate" VALUE="2016-05-05T13:34:20.647Z"/>
+    <foxml:property NAME="info:fedora/fedora-system:def/view#lastModifiedDate" VALUE="2017-05-10T15:04:19.778Z"/>
+  </foxml:objectProperties>
+  <foxml:datastream CONTROL_GROUP="X" FEDORA_URI="info:fedora/uuid:0ff9c946-c898-4ffc-8a72-e1418f43fe44/AUDIT"
+    ID="AUDIT" STATE="A" VERSIONABLE="false">
+    <foxml:datastreamVersion CREATED="2016-05-05T13:34:20.647Z"
+      FORMAT_URI="info:fedora/fedora-system:format/xml.fedora.audit" ID="AUDIT.0" LABEL="Audit Trail for this object" MIMETYPE="text/xml">
+      <foxml:xmlContent>
+        <audit:auditTrail xmlns:audit="info:fedora/fedora-system:def/audit#">
+          <audit:record ID="AUDREC1">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>ingest</audit:action>
+            <audit:componentID/>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2017-05-10T15:04:19.778Z</audit:date>
+            <audit:justification>Initial ingest</audit:justification>
+          </audit:record>
+        </audit:auditTrail>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream CONTROL_GROUP="X" FEDORA_URI="info:fedora/uuid:0ff9c946-c898-4ffc-8a72-e1418f43fe44/DC" ID="DC"
+    STATE="A" VERSIONABLE="true">
+    <foxml:datastreamVersion CREATED="2016-05-05T13:34:20.000Z" FORMAT_URI="http://www.openarchives.org/OAI/2.0/oai_dc/"
+      ID="DC.0" LABEL="Dublin Core Record for this object" MIMETYPE="text/xml" SIZE="937">
+      <foxml:xmlContent>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/"
+          xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+          <dc:title>Diskrétní matematika</dc:title>
+          <dc:creator>Turzík, Daniel</dc:creator>
+          <dc:creator>Pavlíková, Pavla</dc:creator>
+          <dc:creator>Vysoká škola chemicko-technologická v Praze</dc:creator>
+          <dc:publisher>Praha : Vydavatelství VŠCHT,</dc:publisher>
+          <dc:date>2007</dc:date>
+          <dc:type>model:monograph</dc:type>
+          <dc:identifier>uuid:0ff9c946-c898-4ffc-8a72-e1418f43fe44</dc:identifier>
+          <dc:identifier>URN:ISBN:978-80-7080-667-8</dc:identifier>
+          <dc:identifier>signature:F 21690</dc:identifier>
+          <dc:identifier>sysno:000649347</dc:identifier>
+          <dc:language>cze</dc:language>
+          <dc:rights>policy:private</dc:rights>
+        </oai_dc:dc>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream CONTROL_GROUP="X" FEDORA_URI="info:fedora/uuid:0ff9c946-c898-4ffc-8a72-e1418f43fe44/BIBLIO_MODS"
+    ID="BIBLIO_MODS" STATE="A" VERSIONABLE="true">
+    <foxml:datastreamVersion CREATED="2016-05-05T13:34:20.000Z" FORMAT_URI="http://www.loc.gov/mods/v3"
+      ID="BIBLIO_MODS.0" LABEL="BIBLIO_MODS description of current object" MIMETYPE="text/xml" SIZE="4562">
+      <foxml:xmlContent>
+        <modsCollection xmlns="http://www.loc.gov/mods/v3" xmlns:ns2="http://www.w3.org/1999/xlink">
+          <mods ID="MODS_VOLUME_0001">
+            <titleInfo>
+              <title>Diskrétní matematika</title>
+            </titleInfo>
+            <name type="personal">
+              <namePart>Turzík, Daniel</namePart>
+              <role>
+                <roleTerm authority="marcrelator" type="code">aut</roleTerm>
+              </role>
+            </name>
+            <name type="personal">
+              <namePart>Pavlíková, Pavla</namePart>
+              <namePart type="date">1976-</namePart>
+              <role>
+                <roleTerm authority="marcrelator" type="code">aut</roleTerm>
+              </role>
+            </name>
+            <name type="corporate">
+              <namePart>Vysoká škola chemicko-technologická v Praze</namePart>
+            </name>
+            <typeOfResource>text</typeOfResource>
+            <genre>vysokoškolská skripta</genre>
+            <originInfo>
+              <place>
+                <placeTerm authority="marccountry" type="code">xr</placeTerm>
+              </place>
+              <place>
+                <placeTerm type="text">Praha</placeTerm>
+              </place>
+              <edition>Vyd. 1.</edition>
+              <issuance>single unit</issuance>
+              <publisher>Vydavatelství VŠCHT</publisher>
+              <dateIssued>2007</dateIssued>
+            </originInfo>
+            <language>
+              <languageTerm authority="iso639-2b" type="code">cze</languageTerm>
+            </language>
+            <physicalDescription>
+              <form authority="marcform">print</form>
+              <extent>106 s. : il.</extent>
+            </physicalDescription>
+            <targetAudience authority="marctarget">specialized</targetAudience>
+            <note>Daniel Turzík, Pavla Pavlíková</note>
+            <note>Nad názvem: Vysoká škola chemicko-technologická v Praze</note>
+            <note>Obsahuje bibliografii a rejstřík</note>
+            <subject authority="psh">
+              <topic>teorie grafů</topic>
+              <topic>ma</topic>
+            </subject>
+            <subject authority="psh">
+              <topic>algebra</topic>
+              <topic>ma</topic>
+            </subject>
+            <subject>
+              <topic>DISKRÉTNÍ MATEMATIKA</topic>
+            </subject>
+            <classification authority="lcc"/>
+            <classification authority="udc"/>
+            <classification authority="udc"/>
+            <identifier type="isbn">978-80-7080-667-8</identifier>
+            <location>
+              <physicalLocation authority="siglaADR">ABA013</physicalLocation>
+              <shelfLocator>F 21690</shelfLocator>
+              <mods:physicalLocation xmlns:mods="http://www.loc.gov/mods/v3">ABA001</mods:physicalLocation>
+            </location>
+            <recordInfo>
+              <recordOrigin>machine generated</recordOrigin>
+              <recordContentSource authority="marcorg">ABA001</recordContentSource>
+              <recordCreationDate encoding="marc">080118</recordCreationDate>
+              <recordChangeDate encoding="iso8601">20080213133607.0</recordChangeDate>
+              <recordIdentifier source="CZ PrSTK">000649347</recordIdentifier>
+              <descriptionStandard>aacr</descriptionStandard>
+              <languageOfCataloging>
+                <languageTerm authority="iso639-2b" type="code">cze</languageTerm>
+              </languageOfCataloging>
+              <mods:recordCreationDate encoding="iso8601" xmlns:mods="http://www.loc.gov/mods/v3">2016-05-05T13:34:20</mods:recordCreationDate>
+              <mods:recordChangeDate encoding="iso8601" xmlns:mods="http://www.loc.gov/mods/v3">2016-05-05T13:34:20</mods:recordChangeDate>
+            </recordInfo>
+            <mods:classification authority="udc" xmlns:mods="http://www.loc.gov/mods/v3">519.17(075.8)</mods:classification>
+            <mods:classification authority="udc" xmlns:mods="http://www.loc.gov/mods/v3">512(075.8)</mods:classification>
+            <mods:subject xmlns:mods="http://www.loc.gov/mods/v3">
+              <mods:topic>teorie grafů</mods:topic>
+            </mods:subject>
+            <mods:identifier type="sysno" xmlns:mods="http://www.loc.gov/mods/v3">000649347</mods:identifier>
+            <mods:identifier type="uuid" xmlns:mods="http://www.loc.gov/mods/v3">uuid:0ff9c946-c898-4ffc-8a72-e1418f43fe44</mods:identifier>
+          </mods>
+        </modsCollection>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream CONTROL_GROUP="X" FEDORA_URI="info:fedora/uuid:0ff9c946-c898-4ffc-8a72-e1418f43fe44/RELS-EXT"
+    ID="RELS-EXT" STATE="A" VERSIONABLE="true">
+    <foxml:datastreamVersion CREATED="2016-05-05T13:34:20.000Z" FORMAT_URI="info:fedora/fedora-system:FedoraRELSExt-1.0"
+      ID="RELS_EXT.0" LABEL="RDF Statements about this object" MIMETYPE="application/rdf+xml" SIZE="14178">
+      <foxml:xmlContent>
+        <rdf:RDF xmlns:kramerius="http://www.nsdl.org/ontologies/relationships#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+          <rdf:Description rdf:about="info:fedora/uuid:0ff9c946-c898-4ffc-8a72-e1418f43fe44">
+            <fedora-model:hasModel rdf:resource="info:fedora/model:monograph" xmlns:fedora-model="info:fedora/fedora-system:def/model#"/>
+            <oai:itemID xmlns:oai="http://www.openarchives.org/OAI/2.0/">uuid:0ff9c946-c898-4ffc-8a72-e1418f43fe44</oai:itemID>
+            <kramerius:policy>policy:private</kramerius:policy>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:e36a143f-052a-463f-b219-21ae3191d40c"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:da60f555-f5a6-46a0-9979-98bdc59ad0f9"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:44a1f207-fa44-4355-954e-5e164fffcd01"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:1a63c0d0-cc06-4b7c-b118-3bf7f73f09b1"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:49a4b536-1b96-4160-80ee-41c850b9b5ff"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:a3dadd00-6b3d-4afd-9891-034d3e8044fe"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:671283e0-8dc2-4787-980e-3d5f0c569007"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:40c40cee-73d9-475d-86f8-fcddfb6dc8de"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:6dd35e86-ece6-4f65-95f7-d13480e686c0"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:dad1ebb9-2e0b-4539-828f-1c5adfeb7bcf"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:64f18383-93ca-41da-8d9c-0821c62fe570"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:e597d207-aca5-4ad4-abcf-693fe70cecec"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:9e148fe4-5514-4941-9324-dad8cd73ce33"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:c22d5cba-3bfe-42c4-8e6b-6ca0365ce5bd"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:4623c41a-6d39-4168-a405-e80f2504bdef"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:8482e96d-7c50-4935-850b-e4c2cac30d75"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:eace1443-b380-45a9-b254-42e52206a69d"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:dfc4430e-3d1d-47af-bc11-8589d9c43544"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:013d03fe-2376-4f73-8601-133b59589653"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:171007d3-daa0-481b-86de-1f2ca6340864"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:c573a376-bf4b-4a3b-b37b-6116df265256"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:43c1c482-7902-4528-90b4-d7aa52526620"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:40346fdf-1ed3-4e29-8da2-d6b818176901"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:4ecdb479-c8db-495e-a5f1-ce8bf43db3ec"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:77bf6350-0c41-450d-ac2f-a3c4210c9e84"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:ce9e1fc7-a9e9-4380-a79d-c3b2ffa84e5c"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:3fc2c70f-a774-4efa-af43-c237216b7b28"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:8752d5a3-02a5-4542-ac64-643379a8e265"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:63c70f5f-d932-4ca7-9bdf-ca024e7bf404"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:9ff0dde6-696e-4d87-a481-b502f7716043"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:07f6d6fc-fc08-4126-86bf-f04b7946735c"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:f9402c13-20b8-40ac-b1d4-7ee412ed2511"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:14ce4bcf-638c-429d-ad0a-f218741b77af"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:faeee654-207a-4408-9a85-f27e4fb46238"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:e7ee9f36-6749-4bb4-b942-ee56d6a26519"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:5bd8adcc-6af3-4587-a123-6a537090ac32"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:7e4f7a55-f245-4f63-981a-e32e7b71e310"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:10455abf-131e-460b-9e89-c5d1218eac2b"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:a4991281-c04f-4369-9aa1-1124d99b1da8"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:0d3866ea-3c75-44be-8bbf-8f55dea7e2a1"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:ef9be0a0-bee4-44bb-8a7e-d54820e3dc53"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:c686329c-f923-4062-8d70-4eb658df90b3"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:5466c304-b777-4ba7-b6a1-09ada30d7c45"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:5c3b5371-d611-4273-8ea2-228199ebeeba"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:ba8cc405-2129-4314-9c22-ff207317186b"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:6a9ece45-9715-4c7b-9620-01b41d2602f1"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:4e9db915-4138-4dfd-ab62-611d34fd7fff"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:239f3b4d-62df-40df-a5ff-6d37fd149205"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:59336eee-1102-4234-bf40-b21459e2a8ba"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:fe259315-669d-4315-b3fa-5c641889a72b"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:52a2ccb6-ee53-4e82-934c-91c6ef830418"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:8dafa4ad-0b7b-4d5d-b96e-af92840b7af3"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:ee29ff03-71d2-47c6-9235-0d097f1b4b90"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:c964af90-bb0f-4135-94db-503e7cc0d4a9"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:23d42f8b-99f5-48f3-8df4-5cfe878a1be8"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:2da3e6fb-3f72-474a-90dc-7342c6b70b2c"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:4996d699-56b1-4229-8323-853037266444"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:9ac6f95d-9692-4672-8570-fe3f549de371"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:ca942105-732e-4b15-a667-d3eb0b5db5b3"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:12dde43a-b9de-4b95-a0c2-75064d230e59"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:701d2562-6c4f-4534-8dba-11aea43f1fef"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:ab32a208-0c85-4895-9776-2b87cd268d40"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:170e49dd-1029-4441-8621-67721f211aaf"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:ebc1fa60-8385-4887-ab29-95f33d288467"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:fc3c41bb-186e-4820-a0b9-d43136461942"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:adf51062-2690-4b20-8e96-d824fd9bf992"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:c9f61f28-f24a-414b-95d5-b9a457c8da10"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:10ecaa9f-d409-42b0-b692-796f4f9b131e"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:734b59c9-5ab6-4611-bd4c-fb9fb6a8d725"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:79b25667-d593-4984-aec8-d995fefec223"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:bc8a200c-f014-41ed-93c5-c8b91fa47de0"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:a9d00d9e-b99c-4a77-a04d-758ccee15daa"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:2ac399c2-b72d-49e2-8f1f-a9231abaf2b8"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:2a5f2c17-344e-4158-b83c-0df7b6401093"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:6035c84a-52e4-4bf8-89b0-d1cc5af30ab1"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:ba76049e-f002-42bb-82dc-4849b316dd29"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:ae0cd508-ac21-49d5-b701-cecba3876998"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:13f4f39a-176e-429e-99f0-c54bca637182"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:8d355c90-08aa-4fd8-9be6-6ca3ec673b55"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:49376a40-54ac-48ff-91b8-2eb6d28999d2"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:55c50165-fb4c-4890-97e4-4fba81543ec4"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:50e942b2-7128-46e3-b6cf-59d94429cf3d"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:fc9260b4-bc44-4909-ba67-8dca40829b29"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:95f0959f-ea69-4f50-90be-8a37323c5205"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:99ffd324-20f0-43a7-a76e-e03fc8b08cc7"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:b249c435-ba51-4f54-b363-fa78460e519c"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:0abfdb34-acd6-4289-b242-28ce599ccd3f"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:69e3fb80-f498-475e-aaae-28ebea5a33d3"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:abd89e09-4a10-40a7-8b82-ec426331f393"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:ffc66bf1-acfb-43d0-a69d-f346fc61cb16"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:77a80d94-d06e-4cd8-b6fb-4aef49646973"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:0c0f3fe0-c394-44ad-a622-593c5cba03d5"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:d752357d-fc0c-4665-86db-33ccf53f4297"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:5e257aaf-aaa8-47ce-9846-693096fb1f54"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:79f7c46e-6d72-4feb-ae86-224907976b7d"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:37b27b97-ceef-46d1-8c19-36ff9efd67cd"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:79426945-ac63-4218-a0af-87027c841190"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:05ecdc3f-12ce-400d-ba9b-490dfb50d67a"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:dec78869-3300-4832-b45f-b3ea8a77d44f"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:84ba6725-da26-4495-86a4-9c216283d33e"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:b61b567d-4f22-4fab-bccf-666901fe942d"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:5392dcaa-98c7-4cbc-abb7-d1d44db9c97b"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:0271d51e-72ec-4a07-a46b-38bf4a7c38d0"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:87cd03ed-2226-49bc-836b-0f246251de78"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:a013db15-c36d-4da2-8fb4-331d816f6cc7"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:aac2119c-be1b-4afb-8b60-d5e166678547"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:9f32cb8f-3844-4469-ab37-7dd5def451f0"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:0303bcf4-cf50-4bc7-a5d1-640513e87ca7"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:74d9a34c-65ef-4fcf-97fe-0f311977a5f2"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:bac03d79-f1a7-4d23-bed0-defdaa84fe79"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:ddbec3ed-6628-45a9-8b66-fde6eb71a7c6"/>
+            <kramerius:hasPage rdf:resource="info:fedora/uuid:b56b4dac-2f6f-40b6-a591-b4e1a79e3396"/>
+          </rdf:Description>
+        </rdf:RDF>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+</foxml:digitalObject>
