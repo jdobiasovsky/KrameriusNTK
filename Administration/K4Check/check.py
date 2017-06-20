@@ -8,7 +8,7 @@ import shutil
 print("Will check whether digital object is in catalog and verify it's ID structure...")
 print("Required files for input:")
 print(">>> ./input/fcrepo_export/uuid_*         # Exported objects from fedora repository")
-print(">>> ./input/idlist.xml                   # VuFind export for tag \"Digitized\"")
+print(">>> ./input/856_kramerius                # Scratch file from Aleph for 856_kramerius (scratch/STK01/...")
 
 input("Press ENTER to continue...")
 print("\n\n")
@@ -71,7 +71,7 @@ for file in glob.glob("./input/fcrepo_export/**/*.xml", recursive=True):
                                    "(</mods:recordIdentifier>)", contents)
             sysno = grab_sysno.group(2)
 
-            aleph_export.write(sysno + " 85640 L $$uhttp://k4.techlib.cz/search/handle/" + uuid +
+            aleph_export.write(sysno + " 85640 L $$uhttp://kramerius.techlib.cz/search/handle/" + uuid +
                                "$$yDigitalizovaný dokument\n")
             aleph_export.write(sysno + " BAS   L di\n\n")
             # extracts uuid and sysno, writes line into aleph_output
