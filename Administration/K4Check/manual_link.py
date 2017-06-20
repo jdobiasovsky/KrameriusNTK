@@ -27,8 +27,16 @@ for uuid in for_correction:
 
     sysno = input("SYSNO / skip / exit: \n")
     if sysno == "skip":
+        for_correction.remove(uuid)
+        for_correction.sort()
+        update_for_correction = open("./output/missing_in_cat_resume", "w")
+        update_for_correction.truncate()
+        for line in for_correction:
+            update_for_correction.write(line)
+        update_for_correction.close()
         continue
     if sysno == "exit":
+        print("Exiting...")
         exit(0)
 
     while len(sysno) is not 9:

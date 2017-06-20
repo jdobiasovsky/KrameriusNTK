@@ -20,8 +20,8 @@ idlist_walk = [x[1] for x in idlist_walk]
 # makes list of uuid identifiers found in 856_kramerius (documents present in catalog)
 print("Total items: ", len(idlist_walk))
 
-missing = open("./missing_in_cat.txt", "w")
-correct = open("./present_in_cat.txt", "w")
+missing = open("./output/missing_in_cat.txt", "w")
+correct = open("./output/present_in_cat.txt", "w")
 # files that will list all documents present / missing in catalog
 missing_count = 0
 correct_count = 0
@@ -73,7 +73,7 @@ for file in glob.glob("./input/fcrepo_export/**/*.xml", recursive=True):
 
             aleph_export.write(sysno + " 85640 L $$uhttp://kramerius.techlib.cz/search/handle/" + uuid +
                                "$$yDigitalizovaný dokument\n")
-            aleph_export.write(sysno + " BAS   L di\n\n")
+            aleph_export.write(sysno + " BAS   L di\n")
             # extracts uuid and sysno, writes line into aleph_output
             shutil.move(file, "./output/processed/" + re.search("uuid_.*.xml", file).group(0))
             proc_count += 1
