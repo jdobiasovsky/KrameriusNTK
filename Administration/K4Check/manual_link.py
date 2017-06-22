@@ -31,8 +31,9 @@ if os.path.isfile("./output/missing_in_cat_resume") is False:
             if grab_sysno is None:
                 grab_sysno = re.search("(<dc:identifier>sysno:)(\d\d\d\d\d\d\d\d\d)(</dc:identifier>)", datacheck)
             sysno = grab_sysno.group(2)
-            aleph_export.write(sysno + " 85640 L $$uhttp://kramerius.techlib.cz/search/handle/" + uuid +
+            aleph_export.write(sysno + " 85640 L $$uhttp://kramerius.techlib.cz/search/handle/" + uuid[:-1] +
                                "$$yDigitalizovaný dokument\n")
+            # uuid[:-1] removes \n character at the end of line when reading text file
             aleph_export.write(sysno + " BAS   L di\n")
             aleph_export.close()
             for_correction.remove(uuid)
@@ -79,8 +80,9 @@ for uuid in for_correction:
         print("Invalid...")
         sysno = input("Enter SYSNO: \n")
 
-    aleph_export.write(sysno + " 85640 L $$uhttp://kramerius.techlib.cz/search/handle/" + uuid +
+    aleph_export.write(sysno + " 85640 L $$uhttp://kramerius.techlib.cz/search/handle/" + uuid[:-1] +
                        "$$yDigitalizovaný dokument\n")
+    # uuid[:-1] removes \n character at the end of line when reading text file
     aleph_export.write(sysno + " BAS   L di\n")
     aleph_export.close()
     for_correction.remove(uuid)
