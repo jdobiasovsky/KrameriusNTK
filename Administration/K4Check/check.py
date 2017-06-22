@@ -19,7 +19,6 @@ idlist_walk = re.findall("(search/handle/)(uuid:.*?)(\$\$y)", idlist.read(), re.
 idlist_walk = [x[1] for x in idlist_walk]
 # makes list of uuid identifiers found in 856_kramerius (documents present in catalog)
 print("Total items: ", len(idlist_walk))
-
 missing = open("./output/missing_in_cat.txt", "w")
 correct = open("./output/present_in_cat.txt", "w")
 # files that will list all documents present / missing in catalog
@@ -28,7 +27,7 @@ correct_count = 0
 # counters for no. of documents present / missing
 
 for files in glob.glob("./input/fcrepo_export/*.xml"):
-    # iterates through all files in ^path, checks their uuid against idlist, copies to target folders according to result
+    # iterates through all files in ^path, checks their uuid against idlist, copy file according to result
     file_uuid = re.search("(./input/fcrepo_export/uuid_)(.*?)(.xml)", files)
     uuid = str("uuid:" + file_uuid.group(2))
     if uuid not in idlist_walk:
@@ -97,7 +96,3 @@ print("Discarded objects due to model mismatch: ", disc_count)
 print("----------------------------------------------------------\n")
 print("In catalog:", correct_count)
 print("Missing:", missing_count)
-
-
-
-
