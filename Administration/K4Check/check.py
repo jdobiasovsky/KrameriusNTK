@@ -18,7 +18,10 @@ idlist = open("./input/856_kramerius", "r")
 idlist_walk = re.findall("(search/handle/)(uuid:.*?)(\$\$y)", idlist.read(), re.DOTALL)
 idlist_walk = [x[1] for x in idlist_walk]
 # makes list of uuid identifiers found in 856_kramerius (documents present in catalog)
-print("Total items: ", len(idlist_walk))
+print("Total items in catalog: ", len(idlist_walk))
+print("Total files in queue: ", len(glob.glob("./input/fcrepo_export/*.xml")))
+
+
 missing = open("./output/missing_in_cat.txt", "w")
 correct = open("./output/present_in_cat.txt", "w")
 # files that will list all documents present / missing in catalog
@@ -47,7 +50,9 @@ correct.close()
 
 print("Verifying metadata structure...")
 
-aleph_export = open("./output/aleph_export", "w")
+batch_export = open("./output/batch_export", "w")
+batch_export.write("# this is only test file for records with sysno present, if smaller than expected, manual update"
+                   "of metadata for some records will be required \n")
 # file for batch aleph export (scratch/856_kramerius)
 proc_count = 0
 err_count = 0
@@ -70,9 +75,9 @@ for file in glob.glob("./input/fcrepo_export/**/*.xml", recursive=True):
                                    "(</mods:recordIdentifier>)", contents)
             sysno = grab_sysno.group(2)
 
-            aleph_export.write(sysno + " 85640 L $$uhttp://kramerius.techlib.cz/search/handle/" + uuid +
+            batch_export.write(sysno + " 85640 L $$uhttps://kramerius.techlib.cz/search/handle/" + uuid +
                                "$$yDigitalizovaný dokument\n")
-            aleph_export.write(sysno + " BAS   L di\n")
+            batch_export.write(sysno + " BAS   L di\n")
             # extracts uuid and sysno, writes line into aleph_output
             shutil.move(file, "./output/processed/" + re.search("uuid_.*.xml", file).group(0))
             proc_count += 1
@@ -95,4 +100,4 @@ print("Missing ID or bad sysno syntax: ", err_count)
 print("Discarded objects due to model mismatch: ", disc_count)
 print("----------------------------------------------------------\n")
 print("In catalog:", correct_count)
-print("Missing:", missing_count)
+print("Missing or requiring verification:", missing_count)
