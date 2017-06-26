@@ -3,6 +3,7 @@ import os.path
 import re
 
 print("Getting records...")
+print("Once you're done, you can merge 856_kramerius & aleph_manual_export for complete list of records")
 
 if os.path.isfile("./output/missing_in_cat_resume") is True:
     data = open("./output/missing_in_cat_resume", "r")
