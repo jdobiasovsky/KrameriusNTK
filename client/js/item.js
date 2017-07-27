@@ -27,8 +27,6 @@ K5.eventsHandler.addHandler(function(type, configuration) {
     }
     if (type === "widow/url/hash") {
         if (K5.gui.page && K5.gui.page ==="doc") {
-//            var phash = location.hash;
-//            var pid = phash.startsWith("#!") ? phash.substring(2) : phash.substring(1);
             var pid = hashParser().pid;
             if (K5.api.ctx.item && K5.api.ctx.item[pid]) {
                 if (K5.api.ctx.item[pid].pid) {
@@ -81,7 +79,7 @@ function _eventProcess(pid) {
     
     
     K5.api.ctx["item"]["selected"] = pid;
-    if (K5.gui.selected) {
+    if (K5.gui.hasOwnProperty('selected') && K5.gui.selected !== null) {
         K5.gui.selected.clearContainer();
         if (K5.gui.selected.download) {
             K5.gui.selected.download.cleanDialog();
@@ -101,10 +99,18 @@ function _eventProcess(pid) {
         K5.gui["selected"]["ctx"] = {};    
 
         if (K5.gui["selected"].containsLeftStructure && K5.gui["selected"].containsLeftStructure()) {
+                        
             if(typeof K5.gui["selected-left"] != 'undefined'){
-                K5.gui["selected-left"].process();   
+                if (K5.gui["selected"].leftStructureSettings) {
+                    K5.gui["selected-left"].setSettings( K5.gui["selected"].leftStructureSettings());
+                }
+                K5.gui["selected-left"].process();
             }else{
-                K5.gui["selected-left"] =  new LeftThumbs();   
+                if (K5.gui["selected"].leftStructureSettings) {
+                    K5.gui["selected-left"] = new LeftThumbs(K5, '#viewer>div.container>div.thumbs',K5.gui["selected"].leftStructureSettings());
+                } else {
+                    K5.gui["selected-left"] = new LeftThumbs(K5, '#viewer>div.container>div.thumbs');
+                }
             }
                  
             //K5.gui["selected-left"].init();
@@ -232,6 +238,34 @@ ItemSupport.prototype = {
         var root_title = K5.api.ctx["item"][pid].root_title;
         $(document).prop('title', K5.i18n.ctx.dictionary['application.title'] + ". " + root_title);
         this.renderContext();
+    },
+    
+    maximize:function(){
+
+        if(K5.gui["maximized"]){
+            this.restore();
+        }else{
+        	$("#metadata").hide();
+            $(".thumbs").hide();
+            $("#viewer>div.breadcrumbs").hide();
+            $("#viewer>div.container").css("width", "100%");
+            $("#viewer div.ol").css("width", "100%");
+            K5.gui["maximized"] = true;
+            this.clearContainer();
+            this.open();
+        }
+    },
+    
+    restore:function(){
+        //$("#header").show();
+        $("#metadata").show();
+        $(".thumbs").show();
+        $("#viewer>div.breadcrumbs").show();
+        $("#viewer>div.container").css("width", "calc(100% - 340px)");
+        $("#viewer div.ol").css("width", "calc(100% - 350px)");
+        K5.gui["maximized"] = false;
+        this.clearContainer();
+        this.open();
     },
     
     addContextButtons: function() {
@@ -494,6 +528,14 @@ ItemSupport.prototype = {
                 }
             });
         }
+    },
+    toggleView: function(){
+        $("#viewer .thumb img").toggle();
+        $("svg.toggle .line").toggle();
+        $("svg.toggle .img").toggle();
+    },
+    toogleModsView: function(){
+        $("div.modsxml li.node").toggleClass("fullmods");
     },
         
     /**

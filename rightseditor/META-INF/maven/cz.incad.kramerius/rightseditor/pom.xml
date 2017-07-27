@@ -13,28 +13,40 @@
 
     <modelVersion>4.0.0</modelVersion>
     <artifactId>rightseditor</artifactId>
+    <groupId>cz.incad.kramerius</groupId>
     <packaging>war</packaging>
-
+    <version>5.1.0</version>
     <licenses>
         <license>
             <name>GNU General Public License</name>
             <url>http://www.gnu.org/licenses/gpl.html</url>
         </license>
     </licenses>
-
+	<!--
     <parent>
         <groupId>cz.incad.kramerius</groupId>
         <artifactId>kramerius</artifactId>
         <version>5.1.0</version>
     </parent>
-
+	-->
 
     <properties>
+	<kramerius.version>5.3.3</kramerius.version>
         <gwt.version>2.7.0</gwt.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+
+   <repositories>
+     <repository>
+      <id>_kramerius_deps</id>
+      <name>Kramerius deps</name>
+      <url>file://${basedir}/m_2_repo</url>
+    </repository>
+   </repositories>
+
     <dependencies>
+
         <dependency>
             <groupId>javax.mail</groupId>
             <artifactId>mail</artifactId>
@@ -43,7 +55,7 @@
         <dependency>
             <groupId>cz.incad.kramerius</groupId>
             <artifactId>security-core</artifactId>
-            <version>${project.parent.version}</version>
+            <version>${kramerius.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>

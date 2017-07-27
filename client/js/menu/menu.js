@@ -82,8 +82,8 @@ PersistentURL.prototype = {
                 cleanWindow();
                 divopen("#viewer div.persistents");
                 var sel = K5.api.ctx.item.selected;
-                var itm = K5.api.ctx.item[sel];
-                $("#persisturl").val(itm.handle.href);
+		var handleurl = window.location.protocol+"//"+window.location.host+"/client/handle/"+sel;
+                $("#persisturl").val(handleurl);
                 $("#persisturl").select();
         },
         'enabled': function() {
@@ -149,6 +149,15 @@ PDFOnePage.prototype = {
                 var selected = K5.api.ctx.item.selected; 
                 var itm = K5.api.ctx.item[selected];
                 if (!itm['forbidden']) {
+                    if (itm['rights']) {
+                        var flag = itm['rights']['read'] && 
+                                   itm['rights']['pdf_resource'] && 
+                                   itm['rights']['show_client_pdf_menu'] && 
+                                   itm['rights']['show_client_print_menu']; 
+                        if (!flag) {
+                           return false;
+                        }
+                    }
                     if ((!_isAudio()) && (!_isPDF())) {
                         return K5.api.ctx.item[selected].datanode; 
                     } else return false;
@@ -230,7 +239,7 @@ PrintPartItem.prototype = {
         'doAction':function() {
                 cleanWindow();
                 $('#viewer>div.container')
-                       .append('<div id="overlay" style="border:2px solid gray">'+
+                       .append('<div id="overlay">'+
                                 '<div id="okButton" class="small"></div>'+
                                 '<div id="cancelButton" class="small"></div>'+
 
@@ -251,8 +260,9 @@ PrintPartItem.prototype = {
                 $("#right-bottom").load("svg.vm?svg=bottomright");
 
                 $("#cancelButton").click(function() {
-                        //restore container width
-                        K5.gui.selected.edit.selection.restoreWidth();
+                        $("#header").show();
+                        $("#metadata").show();
+                        $(".thumbs").show();
 
                         var rect = [];
                         rect.push(K5.gui.selected.edit.selection.x1);
@@ -277,6 +287,11 @@ PrintPartItem.prototype = {
 
                 $("#okButton").click(function() {
                         // select selection
+                    
+                        $("#header").show();
+                        $("#metadata").show();
+                        $(".thumbs").show();
+
                         var rect = [];
 
                         rect.push(K5.gui.selected.edit.selection.x1);
@@ -394,7 +409,9 @@ PrintPartItem.prototype = {
 
                         K5.gui.selected["edit"]= {};
                         K5.gui.selected.edit.selection = new SelectObject(K5);
-                        K5.gui.selected.edit.selection.changeAndStoreWidth();
+                        
+                        //K5.gui.selected.edit.selection.changeAndStoreWidth();
+                        
                         K5.gui.selected.edit.selection.page();
                                 
                 },200);
@@ -405,7 +422,18 @@ PrintPartItem.prototype = {
                 var selected = K5.api.ctx.item.selected; 
                 var itm = K5.api.ctx.item[selected];
                 if (!itm['forbidden']) {
+                    if (itm['rights']) {
+                        var flag = itm['rights']['read'] && 
+                                   itm['rights']['pdf_resource'] && 
+                                   itm['rights']['show_client_pdf_menu'] && 
+                                   itm['rights']['show_client_print_menu']; 
+                        if (!flag) {
+                           return false;
+                        }
+                    }
+                    if ((!_isAudio()) && (!_isPDF())) {
                         return K5.api.ctx.item[selected].datanode; 
+                    } else return false;
                 } else {
                         return false;
                 }
@@ -425,9 +453,17 @@ PrintPage.prototype = {
     },
     'enabled': function() {
             var selected = K5.api.ctx.item.selected; 
-
             var itm = K5.api.ctx.item[selected];
             if (!itm['forbidden']) {
+                if (itm['rights']) {
+                    var flag = itm['rights']['read'] && 
+                               itm['rights']['pdf_resource'] && 
+                               itm['rights']['show_client_pdf_menu'] && 
+                               itm['rights']['show_client_print_menu']; 
+                    if (!flag) {
+                       return false;
+                    }
+                }
                 if ((!_isAudio()) && (!_isPDF())) {
                     return K5.api.ctx.item[selected].datanode; 
                 } else return false;
@@ -452,6 +488,15 @@ PrintSiblings.prototype = {
             var selected = K5.api.ctx.item.selected; 
             var itm = K5.api.ctx.item[selected];
             if (!itm['forbidden']) {
+                if (itm['rights']) {
+                    var flag = itm['rights']['read'] && 
+                               itm['rights']['pdf_resource'] && 
+                               itm['rights']['show_client_pdf_menu'] && 
+                               itm['rights']['show_client_print_menu']; 
+                    if (!flag) {
+                       return false;
+                    }
+                }
                 if ((!_isAudio()) && (!_isPDF())) {
                     return K5.api.ctx.item[selected].datanode; 
                 } else return false;
@@ -476,6 +521,17 @@ PrintTitle.prototype = {
                 var selected = K5.api.ctx.item.selected; 
                 var itm = K5.api.ctx.item[selected];
                 if (!itm['forbidden']) {
+                 
+                    if (itm['rights']) {
+                        var flag = itm['rights']['read'] && 
+                                   itm['rights']['pdf_resource'] && 
+                                   itm['rights']['show_client_pdf_menu'] && 
+                                   itm['rights']['show_client_print_menu']; 
+                        if (!flag) {
+                           return false;
+                        }
+                    }
+ 
                     if ((!_isAudio()) && (!_isPDF())) {
                         var children = K5.api.ctx.item[selected]["children"];
                         if (children) {
@@ -520,7 +576,9 @@ PDFSiblingsTitle.prototype = {
         'message' :function() {
             if (this.ctx && this.ctx.conf) { 
                 if (this.ctx.conf.pdfMaxRange !== "unlimited") {
-                    return "Maximalni pocet stranek limitovan na:"+this.ctx.conf.pdfMaxRange+". Tiskne se od aktualne vybrane."; 
+		    var f = K5.i18n.ctx.dictionary['ctx.actions.pdftitle.message.1'];
+		    var s = K5.i18n.ctx.dictionary['ctx.actions.pdftitle.message.2'];
+                    return f+this.ctx.conf.pdfMaxRange+s; 
                 }
             } else return null;
         },
@@ -530,6 +588,16 @@ PDFSiblingsTitle.prototype = {
 
             var itm = K5.api.ctx.item[selected];
             if (!itm['forbidden']) {
+                if (itm['rights']) {
+                    var flag = itm['rights']['read'] && 
+                               itm['rights']['pdf_resource'] && 
+                               itm['rights']['show_client_pdf_menu'] && 
+                               itm['rights']['show_client_print_menu']; 
+                    if (!flag) {
+                       return false;
+                    }
+                }
+
                 if ((!_isAudio()) && (!_isPDF())) {
                     return K5.api.ctx.item[selected].datanode; 
                 } else return false;
@@ -554,10 +622,12 @@ PDFTitle.prototype = {
                 K5.outputs.pdf.title(K5.api.ctx.item.selected);
         },
         'message' :function() {
-            this.ctx.conf
+            //this.ctx.conf
             if (this.ctx && this.ctx.conf) { 
                 if (this.ctx.conf.pdfMaxRange !== "unlimited") {
-                    return "Maximalni pocet stranek :"+this.ctx.conf.pdfMaxRange; 
+                var f = K5.i18n.ctx.dictionary['ctx.actions.pdftitle.message.1'];
+                var s = K5.i18n.ctx.dictionary['ctx.actions.pdftitle.message.2'];
+                    return f+this.ctx.conf.pdfMaxRange; 
                 }
             } else return null;
         },
@@ -566,6 +636,15 @@ PDFTitle.prototype = {
                 var selected = K5.api.ctx.item.selected; 
                 var itm = K5.api.ctx.item[selected];
                 if (!itm['forbidden']) {
+                    if (itm['rights']) {
+                        var flag = itm['rights']['read'] && 
+                                   itm['rights']['pdf_resource'] && 
+                                   itm['rights']['show_client_pdf_menu'] && 
+                                   itm['rights']['show_client_print_menu']; 
+                        if (!flag) {
+                           return false;
+                        }
+                    }
                     if ((!_isAudio()) && (!_isPDF())) {
                         var children = K5.api.ctx.item[selected]["children"];
                         if (children) {

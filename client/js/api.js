@@ -170,7 +170,11 @@ ClientAPIDev.prototype = {
      * @method
      */
     askForItem : function(pid, whenready) {
-        $.getJSON("api/item/" + pid, _.bind(function(data) {
+        // check page ?? Do it better
+    	if (pid && pid.split("@").length > 1) {
+    		pid = pid.split("@")[0];
+    	}
+    	$.getJSON("api/item/" + pid, _.bind(function(data) {
             if (!this.isKeyReady("item")) {
                 this.ctx["item"] = {};
             }
@@ -295,6 +299,33 @@ ClientAPIDev.prototype = {
     },
 
     /**
+     * Requesting rights from concrete pid
+     * @param {string} pid - Pid of object.
+     * @param {requestCallback} whenready  - Callback handling responses.
+     * @method
+     */
+    askForRights : function(pid, actions, whenready) {
+        var actions = _.reduce(actions, function(memo, value, index) {
+            if (index > 0) {
+                memo = memo + ",";
+            }
+            memo = memo + value;
+            return memo;
+        }, "");
+        $.getJSON("api/rights?pid=" + pid + "&actions="+actions, _.bind(function(data) {
+            if (!this.isKeyReady("item")) {
+               this.ctx["item"] = {};
+            }
+            if (!this.isKeyReady("item/" + pid)) {
+               this.ctx["item"][pid] = {};
+            }
+            this.ctx["item"][pid]['rights'] = data;
+            if (whenready)
+                whenready.apply(null, [ data ]);
+        }, this));
+    },
+
+    /**
      * Requesting children from concrete pid
      * @param {string} pid - Pid of object.
      * @param {requestCallback} whenready  - Callback handling responses.
@@ -414,7 +445,9 @@ ClientAPIDev.prototype = {
      * @param {requestCallback} okFunc  - Message has been sent callback.
      * @param {requestCallback} failFunc  - Something wrong callback.
      */
-    searchItemAndExploreChildren : function(pid, whenready) {
+    searchItemAndExploreChildren : function(hash, whenready) {
+        var pid =  hash.pid;
+        
         $.getJSON("api/item/" + pid + "/children", _.bind(function(data) {
             if (!this.isKeyReady("item")) {
                 this.ctx["item"] = {};
@@ -424,13 +457,17 @@ ClientAPIDev.prototype = {
             }
             this.ctx["item"][pid]['children'] = data;
             if (data.length == 1) {
-                this.searchItemAndExploreChildren(data[0].pid, whenready);
+                hash.pid = data[0].pid;
+                hash.pmodel = data[0].model;
+                this.searchItemAndExploreChildren(hash, whenready);
             } else {
                 if(data.length>0 && data[0].datanode){
-                    this.searchItemAndExploreChildren(data[0].pid, whenready);
+                    hash.pid = data[0].pid;
+                    this.searchItemAndExploreChildren(hash, whenready);
                 }else{
+                    
                     if (whenready)
-                        whenready.apply(null, [ pid ]);
+                        whenready.apply(null, [hash]);
                 }
             }
         }, this));
@@ -440,13 +477,13 @@ ClientAPIDev.prototype = {
      * Search first pid to display and navigate browser to  this item.
      * @method
      */
-    gotoDisplayingItemPage : function(newhash, q) {
+    gotoDisplayingItemPage : function(newhash) {
         var hash = hashParser(newhash);
         var pid = hash.pid;
         
-        this.searchItemAndExploreChildren(pid, _.bind(function(data) {
-            hash.pid = data;
-            this.gotoItemPage(jsonToHash(hash), q);
+        this.searchItemAndExploreChildren(hash, _.bind(function(data) {
+            //hash.pid = data;
+            this.gotoItemPage(jsonToHash(data), true);
         }, this));
     },
 
@@ -454,14 +491,14 @@ ClientAPIDev.prototype = {
      * Navigate browser to concrete item 
      * @method
      */
-    gotoItemPage : function(pid, q) {
+    gotoItemPage : function(pid, withParams) {
         var href = "";
-        if (q !== undefined) {
-            href += "?q=" + q + "&";
+        if (withParams) {
+            $('#search_form input[name="page"]').val("doc")
+            href += "index.vm?" + $("#search_form").serialize() + "#" + pid;
         } else {
-            href += "?";
+            href += "index.vm?page=doc#" + pid;
         }
-            href += "page=doc#" + pid;
         window.location.assign(href);
     },
 

@@ -1,21 +1,8 @@
-/*
-#**
-  - Stylesheet parameters and properties definition -
-*#
-#set( 
-    $params = {
-        "svg.stroke"            :  "rgba(174, 207, 229, 1)",
-        "svg.strokeDark"        :  "rgba(0, 30, 60, 1)",
-        "svg.stroke.hover"      :  "white",
-        "svg.fill"              :  "none",
-        "svg.fill.hover"        :  "rgba(0, 30, 60, 0.9)"
-    })
-*/
 
-/* 
-    Created on : Feb 5, 2014, 9:17:54 AM
-    Author     : alberto
-*/
+
+
+
+
 .icon{
     height:24px; 
     width:24px; 
@@ -43,7 +30,7 @@
 svg{
     position:relative;
     background: transparent;
-    /*box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 5px 0px;*/
+    
 }
 
 .footer svg {
@@ -91,15 +78,15 @@ svg{
 }
 
 svg  .svg-icon{
-    fill:$params.get("svg.fill"); 
-    stroke:$params.get("svg.stroke"); 
+    fill:none; 
+    stroke:rgb(0, 0, 0); 
     stroke-width: 4; 
     stroke-linecap:round;
     stroke-linejoin:round;
 }
 
 .dark svg  .svg-icon{
-    stroke:$params.get("svg.strokeDark"); 
+    stroke:rgba(0, 30, 60, 1); 
 }
 
 svg  circle.svg-icon{
@@ -107,16 +94,13 @@ svg  circle.svg-icon{
 }
 
 svg:hover{
-        /*
-    -webkit-filter: drop-shadow(2px 2px 5px rgba(0,0,0,0.5));
-    filter: url(../shadow.svg#dropShadow);
-        */
+        
 }
 
 
 svg:hover *{
-    fill:$params.get("svg.fill.hover"); 
-    stroke:$params.get("svg.stroke.hover"); 
+    fill:rgba(83, 83, 83, 0.15); 
+    stroke:rgba(121, 121, 121, 1); 
 }
 
 svg path.star {
@@ -126,11 +110,3 @@ svg path.star {
 
 }
 
-/*
-.nofill:hover {
-    fill:none; 
-}
-
-.nostroke:hover {
-    stroke:none; 
-}*/

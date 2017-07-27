@@ -1,54 +1,25 @@
-/*
-#**
-  - Stylesheet parameters and properties definition -
-*#
-#set( 
-    $params = {
-        "bodyBackground"         : "#F7F7F7",
-        "inactiveColor"         : "rgba(14, 112, 179, 0.3)",
-        "activeColor"           : "rgba(0, 30, 60, 0.9)",
-        "rowBackground"         : "rgba(14, 112, 179, 0.03)",
-        "thumbBackground"       : "rgba(14, 112, 179, 0.1)",
-        "textColor"             : "white",
-
-        "svg.stroke"            :  "rgba(174, 207, 229, 1)",
-        "svg.stroke.hover"      :  "white",
-        "svg.fill"              :  "none",
-        "svg.fill.hover"        :  "rgba(0, 30, 60, 0.9)",
-
-        "policy.public.color"   : "#00dd00",
-        "policy.private.color"  :"#dd0000",
 
 
-        "hitColor"              :  "rgba(0, 30, 60, 0.7)",
 
-        "chitColor"             :   "rgba(0, 30, 60, 1)",
-
-        "hl.text.color"         : "#767676",
-        "hl.hit.color"          : "#763636",
-
-                
-        "menu.dialogs.width"    : "25%"
-    })
-*/
 html {
    height:100%;
 }
 body {
     font-family: 'Exo 2', Verdana, Arial, Helvetica, Tahoma;
     font-size:11px;
-    color:#0B0F0A;
-    background: $params.bodyBackground;
+    color:#000;
+    background: #F7F7F7;
     margin:0px;
     overflow: hidden;
     position: relative;
     height:100%;    
 }
 
-/*
-body * {
-    position: relative;
-}*/
+a{
+    color: #4a4a4a;
+}
+
+
 
 .button {
         cursor: pointer;
@@ -75,11 +46,11 @@ body * {
 
 
 #header{
-    position: absolute;
+    position: relative;
     height: 40px;
     width: 100%;
-    color: rgba(180, 180, 180, 0.4);
-    background-color: $params.activeColor;
+    color: rgb(0, 0, 0);
+    background-color: rgba(204, 204, 204, 1);
     box-shadow: rgba(0, 0, 0, 0.5) 4px 4px 8px 0px;
     float: left;
     z-index: 4;
@@ -92,8 +63,8 @@ body * {
 }
 
 #header:hover{
-    color: $params.textColor;
-    background-color: $params.activeColor;
+    color: black;
+    background-color: rgba(204, 204, 204, 1);
 }
 
 #header div.buttons{
@@ -106,8 +77,8 @@ body * {
 
 
 #header .buttons div.sel{
-    color: $params.textColor;
-    border-color: rgba(255, 255, 255, 1);
+    color: black;
+    border-color: rgb(5, 5, 5);
     font-weight: bold;
 }
 
@@ -122,7 +93,7 @@ body * {
 
 #header div.button{
     display: inline-block;
-    border: solid 1px rgba(180, 180, 180, 0.4);
+    border: solid 1px rgb(0, 0, 0);
     padding: 5px;
 }
 
@@ -152,7 +123,7 @@ body * {
 }
 
 #header div.button:hover{
-    border-color: rgba(255, 255, 255, 1);
+    border-color: rgba(38, 38, 38, 0.75);
 }
 #header div.right{
     position:absolute;
@@ -195,16 +166,15 @@ body * {
 
 #yearRows .row{
     overflow:hidden;
-    margin: 15px 0 10px 0;
+    margin: 0px 0px 10px 0px;
     position: relative;
-    padding:10px 20px 10px 10px;
-    border: solid 1px transparent;
+    padding:20px 20px 10px 10px;
     background-color: transparent;
 
 }
 
 #yearRows .row:hover{
-    /*box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 5px 0px;*/
+    
 }
 
 #yearRows .row .container{
@@ -222,7 +192,7 @@ body * {
 #yearRows  ul { 
     white-space: nowrap;
     height: 140px;
-    margin: 0 0 0 34px;
+    margin: 0px 0px 0px 0px;
     padding: 0;
 }
 
@@ -240,14 +210,14 @@ body * {
 }
 .thumb img{
     box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 5px 0px;
-    /*height: 100%;*/
+    
     position: relative;
 }
 .thumb>img:hover{
     box-shadow: rgba(0, 0, 0, 0.5) 4px 4px 15px 0px;
     transform: translate(-2px,-2px);
-    -ms-transform: translate(-2px,-2px); /* IE 9 */
-    -webkit-transform: translate(-2px,-2px); /* Safari and Chrome */
+    -ms-transform: translate(-2px,-2px); 
+    -webkit-transform: translate(-2px,-2px); 
 
 }
 #yearRows li.thumb>div.img{
@@ -281,11 +251,11 @@ div.policy:before{
     position:absolute;  
     right:6px; 
     bottom:6px;
-    border-bottom-color: $params.get("policy.private.color");
+    border-bottom-color: #dd0000;
 }
 
 div.public:before{
-    border-bottom-color: $params.get("policy.public.color");
+    border-bottom-color: #00dd00;
 }
 
 
@@ -300,11 +270,11 @@ li.policy:before{
     position:absolute;  
     right:0; 
     bottom:0;
-    border-bottom-color: $params.get("policy.private.color");
+    border-bottom-color: #dd0000;
 }
 
 li.public:before{
-    border-bottom-color: $params.get("policy.public.color");
+    border-bottom-color: #00dd00;
 }
 
 
@@ -329,11 +299,10 @@ li.public:before{
 
 
 #yearRows .button .svg-icon{
-    /* fill: $params.get("svg.fill.hover"); 
-    opacity: 0.2; */
+    
 }
 #yearRows .button:hover .svg-icon{
-    fill: $params.get("svg.fill.hover"); 
+    fill: rgba(231, 231, 231, 1); 
     opacity: 1;
 }
 
@@ -374,8 +343,8 @@ li.public:before{
 
     box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px 0px;
     transform: translate(-2px,-2px);
-    -ms-transform: translate(-2px,-2px); /* IE 9 */
-    -webkit-transform: translate(-2px,-2px); /* Safari and Chrome */
+    -ms-transform: translate(-2px,-2px); 
+    -webkit-transform: translate(-2px,-2px); 
 
 }
 
@@ -404,8 +373,8 @@ li.public:before{
 #yearRows div.arrowLeft:hover{
 
     transform: translate(-2px,-2px);
-    -ms-transform: translate(-2px,-2px); /* IE 9 */
-    -webkit-transform: translate(-2px,-2px); /* Safari and Chrome */
+    -ms-transform: translate(-2px,-2px); 
+    -webkit-transform: translate(-2px,-2px); 
 
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(-180deg);
@@ -419,48 +388,32 @@ li.public:before{
 }
 #yearRows div.rowtitle{
     background-color: #aaaaaa;
+    box-shadow: rgba(0, 0, 0, 0.5) 4px 2px 4px 0px;
     color: #ffffff;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5em;
     height: initial;
-    width: 166px;
+    width: 270px;
     position: absolute;
-    left:-166px;
+    left:0px;
     top:0;
     cursor: pointer;
 
-    -webkit-transform: rotate(-90deg);
-    -webkit-transform-origin: 100% 0%;
-    -moz-transform: rotate(-90deg);
-    -moz-transform-origin: 100% 0%;
-    -o-transform: rotate(-90deg);
-    -o-transform-origin: 100% 0%;
-    -ms-transform:rotate(-90deg);
-    -ms-transform-origin: 100% 0%;
 
 }
 
 #yearRows div.total{
     background-color: #aaaaaa;
     color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.5) -4px 2px 4px 0px;
     text-align: center;
-    font-size: 2em;
-    height: 24px;
-    width: 166px;
+    font-size: 1.5em;
+    height: initial;
+    width: 89px;
     position: absolute;
-    right:24px;
+    right: 0px;
     top:0;
     cursor: pointer;
-
-    -webkit-transform: rotate(-90deg);
-    -webkit-transform-origin: 100% 0%;
-    -moz-transform: rotate(-90deg);
-    -moz-transform-origin: 100% 0%;
-    -o-transform: rotate(-90deg);
-    -o-transform-origin: 100% 0%;
-    -ms-transform:rotate(-90deg);
-    -ms-transform-origin: 100% 0%;
-
 }
 
 
@@ -484,15 +437,52 @@ li.public:before{
     display: none;
 }
 
+#facets .moreButton{
+    cursor: pointer;
+}
+
+#facets .range .sel{
+    text-align:center;
+    margin-bottom:16px;
+}
+
+#facets .range .go{
+    float: right;
+    font-size: 0.8em;
+}
+
+#facets .range .slid{
+    margin:0px 10px;
+}
+
+
+#facets div.res{
+    width: 100%;
+    white-space: inherit;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 #facets a{
+    width: 80%;
     color:inherit;
     text-decoration: inherit;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#facets div.res a span.translate{
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 #facets span.count{
     float:right;
     text-decoration: inherit;
-    margin-left: 40px;
+    margin-left: 4px;
 }
 
 #facets .res:hover{
@@ -500,26 +490,26 @@ li.public:before{
 }
 
 
-/* Viewer styles */
+
 
 
 #viewer{
     position:relative;
     left: 0px;
     top: 0px;
-    background-color: #F5F5F5;
+    background-color: whitesmoke;
     width: 100%;
     height: calc(100% - 20px);
     overflow: hidden;
 }
 
 
-/** actions section */
+
 #viewer .actions{
-    /*top: -500px; */
-        width: $params.get("menu.dialogs.width");
+    
+        width: 25%;
         height: 22em;
-        background-color: $params.activeColor;
+        background-color: rgba(231, 231, 231, 1);
         z-index: 43;
         left: 260px; 
         color: white;
@@ -530,7 +520,7 @@ li.public:before{
         height:0; 
         border-left: 10px solid transparent; 
         border-right: 10px solid transparent; 
-        border-bottom: 10px solid $params.activeColor;
+        border-bottom: 10px solid rgba(231, 231, 231, 1);
         background-color: transparent;
         color: transparent;
         position: absolute;
@@ -612,7 +602,7 @@ li.public:before{
 }
 
 #viewer div.acts_footer .buttons div.sel{
-    color: $params.textColor;
+    color: white;
     border-color: rgba(255, 255, 255, 1);
     font-weight: bold;
 }
@@ -664,14 +654,14 @@ li.public:before{
 #vwr_ctx_addclipboard {
         margin-left:0.8em;        
 }
-/** end of actions section */
 
 
-/** searchinside section */
+
+
 #viewer .searchinside{
-    width: $params.get("menu.dialogs.width");
+    width: 25%;
     height: 9em;
-    background-color: $params.activeColor;
+    background-color: rgba(231, 231, 231, 1);
     z-index: 43;
     left: 37%;
     color: white;
@@ -684,7 +674,7 @@ li.public:before{
         height:0; 
         border-left: 10px solid transparent; 
         border-right: 10px solid transparent; 
-        border-bottom: 10px solid $params.activeColor;
+        border-bottom: 10px solid rgba(231, 231, 231, 1);
         background-color: transparent;
         color: transparent;
         position: absolute;
@@ -716,7 +706,7 @@ li.public:before{
 }
 
 #viewer div.searchinside_footer .buttons div.sel{
-    color: $params.textColor;
+    color: white;
     border-color: rgba(255, 255, 255, 1);
     font-weight: bold;
 }
@@ -733,7 +723,7 @@ li.public:before{
     margin-top:5px;
     display: inline-block;
 }
-/** end of searchinside section */
+
 
 
 
@@ -755,17 +745,17 @@ li.public:before{
     float: left;
 }
 
-/** metadata section */
+
 #viewer>div.infobox{
     position:relative;
     width:340px;
     height: calc(100% - 70px);   
     padding: 0;
     top:0px;
-    background-color: $params.activeColor;
+    background-color: rgba(231, 231, 231, 1);
     float: right;
     left:0;
-    color: white;
+    color: black;
     font-size: 1.4em;
 }
 
@@ -778,10 +768,14 @@ li.public:before{
     position: absolute;
     float:right;
     right: 10px;
+    cursor: hand;
 }
 
 #viewer .infobox div.right .small{
     display: inline-block;
+}
+#viewer .infobox div.right .back{
+    margin-right: 0.8em;
 }
 
 #viewer .infobox h4{
@@ -805,7 +799,7 @@ li.public:before{
 }
 
 #viewer div.mtd_footer  .buttons div.sel{
-    color: $params.textColor;
+    color: white;
     border-color: rgba(255, 255, 255, 1);
     font-weight: bold;
 }
@@ -828,7 +822,7 @@ li.public:before{
         right: 15px;
         margin-top:5px;
         display: inline-block;
-        /** override 1.5em; */
+        
         font-size: 11px;
 }
 
@@ -837,7 +831,7 @@ li.public:before{
         height:0; 
         border-left: 10px solid transparent; 
         border-right: 10px solid transparent; 
-        border-bottom: 10px solid $params.activeColor;
+        border-bottom: 10px solid rgba(231, 231, 231, 1);
         background-color: transparent;
         color: transparent;
         position: absolute;
@@ -845,10 +839,10 @@ li.public:before{
         z-index: 23;
         right: 225px;
 }
-/** end of metadata section */
 
 
-/** basic information */
+
+
 .infobox{
     position:absolute; 
     top: 150px;
@@ -856,20 +850,20 @@ li.public:before{
 
     width: 50%;
     border:0px solid rgba(0, 0, 0, 0.3);
-    color: $params.textColor;
+    color: rgb(0,0,0);
     box-shadow: rgba(0, 0, 0, 0.5) 4px 4px 8px 0px;
     font-size: 1.5em;
     padding: 15px;
-    background-color: $params.activeColor;
+    background-color: rgba(231, 231, 231, 0.90);
 }
 
 .infobox:hover{
-    background-color: $params.activeColor;
+    background-color: rgba(231, 231, 231, 0.90);
 }
-/** end of basic information */
 
 
-/** loginbox section */
+
+
 .loginbox {
     position:absolute; 
     top: 50px;
@@ -877,17 +871,49 @@ li.public:before{
 
     width: 50%;
     border:0px solid rgba(0, 0, 0, 0.3);
-    color: $params.textColor;
+    color: white;
     box-shadow: rgba(0, 0, 0, 0.5) 4px 4px 8px 0px;
     font-size: 1.5em;
     padding: 15px;
-    background-color: $params.activeColor;
+    background-color: rgba(231, 231, 231, 1);
 }
 
 .loginbox:hover{
-    background-color: $params.activeColor;
+    background-color: rgba(231, 231, 231, 1);
 }
-/** end of loginbox section */
+
+
+
+
+.changepswdbox {
+    position:absolute; 
+    top: 50px;
+    left: 90px;
+
+    width: 50%;
+    border:0px solid rgba(0, 0, 0, 0.3);
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.5) 4px 4px 8px 0px;
+    font-size: 1.5em;
+    padding: 15px;
+    background-color: rgba(231, 231, 231, 1);
+}
+
+.changepswdbox:hover{
+    background-color: rgba(231, 231, 231, 1);
+}
+
+#changepswd div.button{
+    display: inline-block;
+    border: solid 1px rgba(180, 180, 180, 0.4);
+    padding: 5px;
+}
+
+#changepswd div.button:hover{
+    color: white;
+    border-color: rgba(255, 255, 255, 1);
+}
+
 
 
 #viewer .pages{
@@ -896,12 +922,11 @@ li.public:before{
 
 
 
-/** breadcrumbs section */
+
 #viewer div.breadcrumbs{
     position:relative;
     height: 20px;
     margin-left: 10px;
-    margin-top: 40px;
     display: table;
     font-size: 1.2em;
     overflow:hidden;
@@ -943,24 +968,21 @@ li.public:before{
 
 
 
-/** pro pdf -- vyhodit !! */
+
 .actionbox {
     position:absolute; 
-    /*top: 150px;
-    right: 90px;
-    height:40%;
-    width: 30%;*/
+    
 
     border:0px solid rgba(0, 0, 0, 0.3);
-    color: $params.textColor;
+    color: white;
     box-shadow: rgba(0, 0, 0, 0.5) 4px 4px 8px 0px;
     font-size: 1.5em;
     padding: 15px;
-    background-color: $params.inactiveColor;
+    background-color: rgba(14, 112, 179, 0.3);
 }
 
 .actionbox:hover{
-    background-color: $params.activeColor;
+    background-color: rgba(231, 231, 231, 1);
 }
 
 #viewer .actionbox {
@@ -968,8 +990,8 @@ li.public:before{
 }
 
 #viewer>div.pin svg.pin .svg-icon{
-    fill: $params.get("svg.fill.hover"); 
-    stroke:$params.get("svg.stroke.hover"); 
+    fill: rgba(231, 231, 231, 1); 
+    stroke:white; 
     opacity: 1;
 }
 
@@ -993,12 +1015,12 @@ li.public:before{
 
 #viewer table.container tr{
     vertical-align: top;
-    background-color: $params.thumbBackground;
+    background-color: whitesmoke);
 }
 
 
 #viewer table.container .selected{
-    background-color: wheat;
+    background-color: rgba(48, 48, 48, 0.1);
 }
 
 #viewer table.container td{
@@ -1006,7 +1028,6 @@ li.public:before{
     padding: 4px;
     width: 33%;
     text-align: center;
-    border: 3px solid $params.bodyBackground;
     word-wrap: break-word;
 }
 
@@ -1022,6 +1043,10 @@ li.public:before{
 
 #viewer table.container tr.img td.hit img{
     border:2px green solid;     
+}
+
+#viewer table.container tr.img td.chit img {
+    border:2px green solid;
 }
 
 #viewer table.container tr.txt td.hit{
@@ -1043,12 +1068,12 @@ li.public:before{
 #viewer li.thumb{
     list-style: none;
     vertical-align: text-top;
-    /*float:left;*/
+    
     display: inline-block;
     margin: 3px;
     text-align: center;
     position:relative;
-    background-color: $params.thumbBackground;
+    background-color: rgba(14, 112, 179, 0.1);
     border: solid 2px transparent;
     min-height:128px;
     min-width:90px;
@@ -1078,7 +1103,7 @@ li.public:before{
 }
 
 #viewer li.hit{
-    border: solid 2px $params.hitColor;
+    border: solid 2px rgba(0, 30, 60, 0.7);
 }
 
 #viewer .hit2:after{
@@ -1093,10 +1118,10 @@ li.public:before{
     border-radius:4px;
     -webkit-border-radius:4px;
     -moz-border-radius:4px;
-    border-color: $params.hitColor;
+    border-color: rgba(0, 30, 60, 0.7);
 }
-#viewer .chit{
-    border: solid 2px $params.chitColor;
+#viewer li.chit{
+    border: solid 2px rgba(0, 30, 60, 1);
 }
 
 #viewer .chit2:after{
@@ -1112,7 +1137,7 @@ li.public:before{
     border-radius:4px;
     -webkit-border-radius:4px;
     -moz-border-radius:4px;
-    border-color: $params.chitColor;
+    border-color: rgba(0, 30, 60, 1);
 }
 #viewer li.thumb img{
     max-width: 100%;
@@ -1167,7 +1192,7 @@ li.public:before{
 
 
 #viewer .pin.infobox{
-    background-color: $params.activeColor;
+    background-color: rgba(231, 231, 231, 1);
 }
 
 
@@ -1209,14 +1234,14 @@ li.public:before{
 }
 
 
-/** viewer options - rotate, fit, plus, minus */
+
 #viewer  div.options {
     position:absolute;
     top:2px;
     left:5px;
     z-index:34;
     color: rgba(180, 180, 180, 0.4);
-    background-color: $params.activeColor;
+    background-color: rgba(231, 231, 231, 1);
     box-shadow: rgba(0, 0, 0, 0.5) 4px 4px 8px 0px;
     
     padding-left: 10px;
@@ -1240,7 +1265,7 @@ li.public:before{
     cursor: pointer;
 }
 
-/** end of viwer options */
+
 
 
 #viewer div.container div.arrow svg  {
@@ -1251,14 +1276,14 @@ li.public:before{
 }
 
 .hl{
-    color: $params.get("hl.text.color");
+    color: #767676;
     margin-top: 4px;
     margin-left: 6px;
 }
 .hl em{
     font-weight: bold;
     font-style: normal;
-    color: $params.get("hl.hit.color")};
+    color: #763636};
 }
 
 .tt_text{
@@ -1268,13 +1293,13 @@ li.public:before{
 
 .actionbox{
     color: rgba(3, 3, 3, 0.4);
-    background-color: $params.inactiveColor;
+    background-color: rgba(14, 112, 179, 0.3);
     box-shadow: rgba(0, 0, 0, 0.5) 4px 4px 8px 0px;
 }
 
 .actionbox:hover{
-    color: $params.textColor;
-    background-color: $params.activeColor;
+    color: white;
+    background-color: rgba(231, 231, 231, 1);
 }
 
 .actionbox select {
@@ -1292,12 +1317,16 @@ li.public:before{
     vertical-align:bottom
 }
 
-/* home */
+
 #home{
     left: 0px;
     top: 0px;
     width: 100%;
     height: 100%;    
+}
+
+#home div.img{
+    
     background-repeat: no-repeat;
     background-position: 40%;
 }
@@ -1306,7 +1335,8 @@ li.public:before{
     overflow: hidden;
     height: 60%;
     opacity: 1;
-    left: 105px;
+    left: 75px;
+    top: 75px;
 }
 
 #home .home_text{
@@ -1318,14 +1348,14 @@ li.public:before{
 #pidinfo{
     position:absolute;
     right: 20px;
-    bottom:100px;
+    bottom:10px;
     padding: 10px;
-    max-width: 300px;
+    max-width: 500px;
     text-align: center;
-    text-shadow: 0 0 5px #000;
-    /* background-color: $params.activeColor; */
-    color: $params.textColor;
+    
+    color: black;
     font-weight: bold;
+    background-color: rgba(231, 231, 231, 0.75);
 }
 #pidinfo>div.a:hover{
     text-decoration: underline;
@@ -1339,18 +1369,18 @@ li.public:before{
 }
 
 #band{
-    background-color: $params.inactiveColor;
+    background-color: rgba(14, 112, 179, 0.3);
     width: 100%;
     height: 170px;
     position:absolute; 
     bottom: -147px;
     transition: bottom 0.3s;
-    -webkit-transition: bottom 0.3s; /* Safari */
+    -webkit-transition: bottom 0.3s; 
     box-shadow: rgba(0, 0, 0, 0.5) 0px -4px 8px 0px;
 }
 
 #band:hover{
-    /* bottom: 0px;  */
+    
 }
 
 
@@ -1359,7 +1389,7 @@ li.public:before{
     position:fixed;
     width: 100%;
     display: inline-block;
-    background-color: $params.activeColor;
+    background-color: rgba(211, 29, 53,1);
     text-align: center;
     padding: 0;
     z-index:3;
@@ -1370,7 +1400,7 @@ li.public:before{
 #buttons div.button{
     white-space: nowrap;
     display: inline-block;
-    border-right: solid 1px rgba(255,255,255, 0.8);
+    border-right: solid 1px rgba(255, 255, 255, 0.8);
     padding: 3px;
     width: 33%;
     color: white;
@@ -1380,7 +1410,7 @@ li.public:before{
 
 #buttons div.sel{
     font-weight: bold;
-    color: yellow;
+    text-decoration: underline;
 }
 
 #buttons div.button:hover{
@@ -1390,26 +1420,26 @@ li.public:before{
 #band #yearRows .row{
     margin: 0;
 }
-/* end home */
 
-/* collections */
+
+
 
 #yearRows{
     height:100%;
 }
 #yearRows .row{
-    background-color: $params.rowBackground;
+    background-color: rgba(255, 255, 255, 0.90);
     position:relative;
 }
 #yearRows .row li.thumb{
-    background-color: $params.thumbBackground;
+    background-color: whitesmoke;
 }
 
 
 
 
 
-/* end collections */
+
 
 #details h2 {
     padding:1px;
@@ -1434,7 +1464,7 @@ li.public:before{
     font-size:0.8em;
 }
 
-/* search results */
+
 #search_results{
     position: absolute;
     margin-top: 40px;
@@ -1475,11 +1505,11 @@ li.public:before{
 }
 
 #search_results_docs{
-    /*text-align: center;*/
+    
     overflow: auto;
     display:block;
     height: auto;
-    width: calc(100% - 380px); /* 380px facets width */
+    width: calc(100% - 380px); 
     float: left;
 }
 
@@ -1492,12 +1522,12 @@ li.public:before{
 
 #search_results .search_result .collapsed{
     float: left;
-    /* position: absolute; */
+    
     bottom: 10;
     right: 15;
 
     margin: 0 0 0 5px;
-    /* text-align: right; */
+    
     clear: both;
 }
 
@@ -1538,6 +1568,28 @@ li.public:before{
     width: 100%;
 }
 
+#search_results .search_result div.collections{
+    margin-right: 2px;
+    float: left;
+}
+
+
+#search_results .search_result div.collections span.ui-icon{
+    float: right;    
+}
+
+#search_results .search_result div.collections div.cols{
+    position: absolute;
+    bottom: 26px;
+    width: 230px;
+    display: none;
+    padding: 4px;
+    
+    -moz-box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5);
+}
+
 .search_result div.thumb{
     background-color: rgba(0, 30, 60, 0.1);
     margin:5px;
@@ -1550,7 +1602,7 @@ li.public:before{
 .search_result div.thumb>div.img{
     float:left;
     max-width: 50%;
-    /*overflow: hidden;*/
+    
 }
 .search_result div.thumb>div.img>img{
     max-height: 128px;
@@ -1597,13 +1649,13 @@ li.public:before{
     margin: 0;
     width: 100%;
     height: 100%;
-    background-color: $params.activeColor;
+    background-color: rgba(231, 231, 231, 1);
     position: relative;
-    color: rgba(180, 180, 180, 0.4);
+    color: rgb(87, 87, 87);
     opacity:0.9;
 }
 #browse .letters>.scroll:hover{
-    color: $params.textColor;
+    color: rgb(0,0,0);
     opacity:1.0;
 }
 #browse .letters>.scroll>ul{
@@ -1645,12 +1697,12 @@ li.public:before{
 
 
 #browse .results .titles li.policy span.title{
-    border-left: 3px solid $params.get("policy.private.color");
+    border-left: 3px solid #dd0000;
     padding-left: 2px;
 }
 
 #browse .results .titles li.public span.title{
-    border-left: 3px solid $params.get("policy.public.color");;
+    border-left: 3px solid #00dd00;;
 }
 
 #browse .results .typ ul{
@@ -1664,7 +1716,7 @@ li.public:before{
     font-size: 1.2em;
     display: inline-block;
     border: solid 1px black;
-    border-color:$params.activeColor;
+    border-color:rgba(231, 231, 231, 1);
     padding: 4px;
     margin: 4px;
     cursor: pointer;
@@ -1689,7 +1741,7 @@ li.public:before{
 }
 
 #browse .letters>.scroll>ul>li:hover{
-    border-color:$params.textColor;
+    border-color:rgba(180, 180, 180, 0.9);
 }
 
 
@@ -1701,15 +1753,15 @@ li.public:before{
     text-align: center;
     width: 74px;
     position: relative;
-    left:-76px;
-    top:0;
+    left:-28.5px;
+    top:25px;
     cursor: pointer;
     font-size: 1.4em;
     text-transform: uppercase;
 
-    -webkit-transform: rotate(-90deg);
+    -webkit-transform: rotate(0deg);
     -webkit-transform-origin: 100% 0%;
-    -moz-transform: rotate(-90deg);
+    -moz-transform: rotate(-deg);
     -moz-transform-origin: 100% 0%;
     -o-transform: rotate(-90deg);
     -o-transform-origin: 100% 0%;
@@ -1723,32 +1775,12 @@ li.public:before{
 }
 
 #browse .letters>.scroll>ul>li.sel{
-    border-color:$params.textColor;
+    border-color:transparent;
     color: params.textColor;
     box-shadow: rgba(0, 0, 0, 0.5) 4px 4px 8px 0px;
     margin: 2px 6px 6px 2px;
 }
-/* /// / 
-#browse .sections>.scroll>ul>li.sel{
-    border-right: none;
-    margin-right: 0;
-    padding-right: 0;
-}
-#browse .sections>.scroll>ul>li.sel2{
-    font-weight: bold;
-    border-left: none;
-    margin-left: 0;
-    padding-left: 0;
-    border-color:params.textColor;
-}
 
-#browse .sections .sel:after{
-    content:" -";
-}
-#browse .sections .sel2:before{
-    content:"- ";
-}
-*/
 #browse .res{
     margin-left: 5px;
     margin-bottom: 10px;
@@ -1770,7 +1802,7 @@ li.public:before{
     text-decoration: underline;
 }
 
-/*redefine jquery ui style because of bug */
+
 .ui-widget-overlay {
     background: #aaaaaa;
 }
@@ -1778,12 +1810,12 @@ li.public:before{
 
 
 
-/** profile dialog */
+
 #prfl_dialog {
         position:absolute; right:1px; top:50px; 
         width:60%; height:60%;
         z-index:43; 
-        background-color: $params.activeColor;
+        background-color: rgba(231, 231, 231, 1);
         color: white;
 }
 
@@ -1801,7 +1833,7 @@ li.public:before{
 }
 
 #prfl_dialog .buttons div.sel{
-    color: $params.textColor;
+    color: white;
     border-color: rgba(255, 255, 255, 1);
     font-weight: bold;
 }
@@ -1832,7 +1864,7 @@ li.public:before{
         height:0; 
         border-left: 10px solid transparent; 
         border-right: 10px solid transparent; 
-        border-bottom: 10px solid $params.activeColor;
+        border-bottom: 10px solid rgba(231, 231, 231, 1);
         background-color: transparent;
         color: transparent;
         position: absolute;
@@ -1862,7 +1894,7 @@ li.public:before{
 }
 
 #prfl_dialog:hover{
-    color: $params.textColor;
+    color: white;
 }
 
 #prfl_dialog div.button:hover{
@@ -1877,11 +1909,7 @@ li.public:before{
 }
 
 #prfl_content {
-        /*
-        height: 60%;  
-        overflow-y: scroll; 
-        overflow-x:auto;
-        */
+        
 }
 
 #prfl_content > div {
@@ -1891,7 +1919,7 @@ li.public:before{
 
 #prfl_content_favorites {
         height: calc(100% - 18em);  
-        overflow-y: scroll; 
+        overflow-y: auto; 
         overflow-x:auto;
 }
 
@@ -1909,24 +1937,21 @@ li.public:before{
         float:none;
 }
 
-/*
-#prfl_content_favorites >div:hover {
-        max-height: 142px; 
-}*/
+
 
 
 #prfl_content_favorites >div>div {
         float:left;
 }
-/** end ofprofile dialog */
 
 
-/** persisetnt url */
+
+
 #viewer .persistents {
         top:calc(50% - 12em);
         width:45%;
         height: 12em;
-        background-color: $params.activeColor;
+        background-color: rgba(231, 231, 231, 1);
         z-index: 43;
         left: 22.5%; 
         color: white;
@@ -1978,7 +2003,7 @@ li.public:before{
 }
 
 #viewer div.persisturl_footer  .buttons div.sel{
-    color: $params.textColor;
+    color: white;
     border-color: rgba(255, 255, 255, 1);
     font-weight: bold;
 }
@@ -2002,19 +2027,19 @@ li.public:before{
         margin-top:5px;
 
         display: inline-block;
-        /** override 1.5em; */
+        
         font-size: 11px;
 }
-/** end of persistent url */
 
 
 
-/** OCR */
+
+
 #viewer .ocr {
         top: 42px;
         width: 95%;
         height: calc(100% - 50px);
-        background-color: $params.activeColor;
+        background-color: rgba(231, 231, 231, 1);
         z-index: 43;
         left: 2.5%;
         color: white;
@@ -2063,7 +2088,7 @@ li.public:before{
 }
 
 #viewer div.ocr_footer  .buttons div.sel{
-    color: $params.textColor;
+    color: white;
     border-color: rgba(255, 255, 255, 1);
     font-weight: bold;
 }
@@ -2087,18 +2112,18 @@ li.public:before{
         margin-top:5px;
 
         display: inline-block;
-        /** override 1.5em; */
+        
         font-size: 11px;
 }
-/** end of OCR */
 
 
-/** selections dialog */
+
+
 #viewer .selections {
         top:calc(50% - 12em);
         width:45%;
         height: 22em;
-        background-color: $params.activeColor;
+        background-color: rgba(231, 231, 231, 1);
         z-index: 43;
         left: 280px; 
         color: white;
@@ -2137,7 +2162,7 @@ li.public:before{
 }
 
 #viewer div.selection_footer  .buttons div.sel{
-    color: $params.textColor;
+    color: white;
     border-color: rgba(255, 255, 255, 1);
     font-weight: bold;
 }
@@ -2163,14 +2188,14 @@ li.public:before{
         font-size: 11px;
 }
 
-/** end of selection dialog */
 
 
 
-/** scroll -TODO: Zmenit ! */
+
+
 #selections_thumbs {
         position:relative;
-        /*overflow-x: scroll;*/
+        
         overflow-x: hidden;
         margin-left:5px;
         margin-right:5px;
@@ -2203,15 +2228,7 @@ li.public:before{
     height: 135px;
     display: inline-block;
 
-    /*    
-    white-space: normal;
-    display: inline-block;
-    margin: 2px 5px 2px 5px;
-    height: 135px;
-    padding: 5px;
-    vertical-align: top;
-    position:relative;
-    */        
+            
 }
 
 #selections_container li.selitem div.info {
@@ -2219,16 +2236,7 @@ li.public:before{
     margin-right:4px;
     overflow:hidden;        
 
-    /*    
-    white-space: normal;
-    display: inline-block;
-    margin: 2px 5px 2px 5px;
-    height: 135px;
-    padding: 5px;
-
-    vertical-align: top;
-    position:relative;
-    */        
+            
 }
 
 .selections_buttons {
@@ -2261,11 +2269,11 @@ li.public:before{
     padding: 0px;
     margin-left:5px;
 }
-/* end of selection */
 
 
 
-/** registration */
+
+
 .registration {
         position: absolute;
         top: 50px;
@@ -2274,7 +2282,7 @@ li.public:before{
 
         border: 0px solid rgba(0, 0, 0, 0.3);
         box-shadow: rgba(0, 0, 0, 0.5) 4px 4px 8px 0px;
-        background-color: $params.activeColor;
+        background-color: rgba(231, 231, 231, 1);
 }
 .registration>div{
         padding: 15px;
@@ -2313,7 +2321,7 @@ li.public:before{
         color: inherit;
         text-decoration: none;
 }
-/** end of registration box */
+
 
 
 
@@ -2327,7 +2335,7 @@ li.public:before{
 }
 
 
-/** containers */
+
 
 .dialogs {
         top:50px;
@@ -2348,7 +2356,7 @@ li.public:before{
         border-top: 1px solid white;
 }
 
-/** end of containers */
+
 
 #login div.button{
     display: inline-block;
@@ -2357,13 +2365,10 @@ li.public:before{
 }
 
 #login div.button:hover{
-    color: $params.textColor;
+    color: white;
     border-color: rgba(255, 255, 255, 1);
 }
 
-#login {
-    color: rgba(180, 180, 180, 0.4);
-}
 #login a {
     color: inherit;
     text-decoration: none;
@@ -2380,12 +2385,12 @@ li.public:before{
 }
 
 
-/** logoptions */
+
 div.logoptions {
         top: calc(20% + 40px);
         width: 300px;
         height: 30%;
-        background-color: $params.activeColor;
+        background-color: rgba(231, 231, 231, 1);
         z-index: 43;
         left: calc(50% - 150px);
         color: white;
@@ -2446,7 +2451,7 @@ div.logoptions div.logoptions_footer  a {
 }
 
 div.logoptions  div.logoptions_footer  .buttons div.sel{
-    color: $params.textColor;
+    color: white;
     border-color: rgba(255, 255, 255, 1);
     font-weight: bold;
 }
@@ -2470,10 +2475,10 @@ div.logoptions  div.logoptions_footer  div.right{
         margin-top:5px;
 
         display: inline-block;
-        /** override 1.5em; */
+        
         font-size: 11px;
 }
-/** end of logoptions */
+
 
 #footer{
     position: fixed;
@@ -2481,8 +2486,8 @@ div.logoptions  div.logoptions_footer  div.right{
     width: 100%;
     height: 20px;
     text-align: center;
-    color: rgba(180, 180, 180, 0.4);
-    background-color: $params.activeColor;
+    color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(245, 245, 245, 1);
     box-shadow: rgba(0, 0, 0, 0.5) -4px 4px 8px 0px;
     float: left;
     z-index: 4;
@@ -2493,13 +2498,13 @@ div.logoptions  div.logoptions_footer  div.right{
     margin: 2px;
 }
 
-/** share dialog */
+
 
 div.share {
         top: 20%;
         width: 500px;
         height: 40%;
-        background-color: $params.activeColor;
+        background-color: rgba(231, 231, 231, 1);
         box-shadow: rgba(0, 0, 0, 0.5) 4px 4px 8px 0px;
         z-index: 43;
         color: white;
@@ -2597,21 +2602,21 @@ div.share_footer  a {
 }
 
 div.share_footer  .buttons div.sel{
-    color: $params.textColor;
+    color: white;
     border-color: rgba(255, 255, 255, 1);
     font-weight: bold;
 }
-/** end of share dialog */
 
 
 
 
-/** messages dialog */
+
+
 div.message {
         top: 20%;
         width: 500px;
         height: 40%;
-        background-color: $params.activeColor;
+        background-color: rgba(231, 231, 231, 1);
         box-shadow: rgba(0, 0, 0, 0.5) 4px 4px 8px 0px;
         z-index: 43;
         color: white;
@@ -2669,15 +2674,15 @@ div.message_footer  a {
 }
 
 div.message_footer  .buttons div.sel{
-    color: $params.textColor;
+    color: white;
     border-color: rgba(255, 255, 255, 1);
     font-weight: bold;
 }
-/** end of dialog message */
 
 
 
-/** pdf busy content */
+
+
 div.pdfbusy_head h2 {
     text-align: center;
 }
@@ -2689,10 +2694,10 @@ div.pdfbusy_message {
 div.pdfbusy_cont {
     
 }
-/** end of pdf busy content */
 
 
-/** pdf wait content */
+
+
 div.pdfwait_head h2 {
     text-align: center;
 }
@@ -2704,15 +2709,15 @@ div.pdfwait_message {
 div.pdfwait_cont {
     
 }
-/** end of pdf busy content */
 
 
-/** download options */
+
+
 div.download {
         top: 20%;
         width: 400px;
         height: 350px;
-        background-color: $params.activeColor;
+        background-color: rgba(231, 231, 231, 1);
         box-shadow: rgba(0, 0, 0, 0.5) 4px 4px 8px 0px;
         z-index: 43;
         color: white;
@@ -2822,12 +2827,22 @@ div.download_footer  a {
 }
 
 div.download_footer  .buttons div.sel{
-    color: $params.textColor;
+    color: white;
     border-color: rgba(255, 255, 255, 1);
     font-weight: bold;
 }
 
-/** end of dialog download */
+#download_options a {
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+  margin-left: 4px;
+  color: #eeeeee;
+  text-decoration: none;
+}
+
+
+
 
 
 #footer a{
@@ -2836,18 +2851,18 @@ div.download_footer  .buttons div.sel{
 }
 
 #footer:hover{
-    color: $params.textColor;
-    background-color: $params.activeColor;
+    color: black;
+    background-color: rgba(247, 247, 247, 1);
 }
 
 
 
-/** feedback dialog */
+
 div.feedback {
         top: 20%;
         width: 300px;
         height: 40%;
-        background-color: $params.activeColor;
+        background-color: rgba(231, 231, 231, 1);
         box-shadow: rgba(0, 0, 0, 0.5) 4px 4px 8px 0px;
         z-index: 43;
         color: white;
@@ -2892,7 +2907,7 @@ div.feedback {
 
 #feedback_container div textarea {
     width: 90%;
-    /*height: 60px; */
+    
     margin-left: 10px;
 }
 
@@ -2937,12 +2952,12 @@ div.feedback_footer  a {
 }
 
 div.feedback_footer  .buttons div.sel{
-    color: $params.textColor;
+    color: white;
     border-color: rgba(255, 255, 255, 1);
     font-weight: bold;
 }
 
-/** end of dialog feedback */
+
 
 
 .opacityloading {
@@ -2952,6 +2967,4 @@ div.feedback_footer  .buttons div.sel{
     opacity:0.7;
     background-color: white;
     width:100%;
-    height:100%;
-}
-
+   

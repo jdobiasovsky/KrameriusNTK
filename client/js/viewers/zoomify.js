@@ -68,25 +68,12 @@ Zoomify.prototype.open = function() {
     this.elem.append(_rightNavigationArrow());    
 
     var optionsDiv = _optionspane();
-    this.elem.append(_optionspane());    
+    if ($("#options").length > 0) {
+        $("#options").remove();
+    }
+    this.elem.append(optionsDiv);
     
-    
-    /*
-    if(isTouchDevice()){
-        this.elem.swipe({
-            swipeLeft: function(event, direction, distance, duration, fingerCount) {
-                K5.gui.selected.next();
-            },
-            swipeRight: function(event, direction, distance, duration, fingerCount) {
-                K5.gui.selected.prev();
-            },
-            maxTimeThreshold:200,
-            threshold:5,
-            triggerOnTouchEnd:true
-        });
-    }*/
 
-    
     var mapDiv = $("<div/>",{"id":"map","width":"100%","height":"100%"});
 
     this.elem.append(mapDiv);    
@@ -326,13 +313,13 @@ Zoomify.prototype.currentPage=function() {
         var x1ideal = mapCenter[0]- (currentSize[0]/2);   
         var y1ideal = mapCenter[1]- (currentSize[1]/2);   
 
-        $('#viewer>div.container').append('<div id="idealcenter" style="border:2px solid red;position:absolute;">');
+        //$('#viewer>div.container').append('<div id="idealcenter" style="border:2px solid red;position:absolute;">');
         //return [x1real, y1real, x2real, y2real];
 
-        $("#idealcenter").css('left',(x1ideal+100)+"px");
-        $("#idealcenter").css('top',(y1ideal+100)+'px');
-        $("#idealcenter").css('width',"200px");
-        $("#idealcenter").css('height',"200px");
+        //$("#idealcenter").css('left',(x1ideal+100)+"px");
+        //$("#idealcenter").css('top',(y1ideal+100)+'px');
+        //$("#idealcenter").css('width',"200px");
+        //$("#idealcenter").css('height',"200px");
 
         
         // realny obrazek na obrazovce
@@ -350,13 +337,6 @@ Zoomify.prototype.crop = function(rect,offset){
         $("#header").show();
         $("#pageright").show();
         $("#pageleft").show();
-        /*
-        function idealCenter (ext) {
-                 return [ext[2]/2, (-1*ext[3])/2];         
-        }
-        function curentSize(ext, resolution) {
-                 return [ext[2]/resolution, ext[3]/resolution];         
-        }*/
 
         var ideal = this.idealCenter(this.projection.getExtent());
 
@@ -420,7 +400,8 @@ Zoomify.prototype.fit = function() {
 
 
 Zoomify.prototype.relativePosition = function() {
-        return $("#map").position();        
+        //return $("#map").position();
+    return $("#map").offset();
 }
 
 

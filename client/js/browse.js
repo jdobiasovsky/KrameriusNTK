@@ -17,7 +17,7 @@ function Browse(application, elem) {
 }
 
 Browse.prototype = {
-    letters: ["0","A","B","C","Č","D","E","F","G","H","CH","I","J","K","L","M","N","O","P","Q","R","Ř","S","Š","T","U","V","W","X","Y","Z","Ž"],
+    letters: ["123","A","B","C","Č","D","E","F","G","H","CH","I","J","K","L","M","N","O","P","Q","R","Ř","S","Š","T","U","V","W","X","Y","Z","Ž"],
     
     ctx: {},
     _init: function() {
@@ -157,7 +157,11 @@ Browse.prototype = {
                 var doc = arr[i];
                 var div = $('<li/>', {class: 'res policy'});
                 div.data("pid", doc.PID);
-                var title = $('<span class="title">' + doc['dc.title'] + '</span>');
+                var dcTitle = doc['dc.title'];
+                if(dcTitle.length === 0){
+                    dcTitle = K5.i18n.translatable("dctitle.none");
+                }
+                var title = $('<span class="title">' + dcTitle + '</span>');
                 title.click(function() {
                     K5.api.gotoDisplayingItemPage($(this).parent().data("pid"));
                 });

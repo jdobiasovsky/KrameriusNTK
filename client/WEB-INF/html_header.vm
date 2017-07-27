@@ -1,5 +1,5 @@
 <head>
-
+#set($reseted = $conf.resetIndexConfig())
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Cache-Control" content="no-cache" />
@@ -15,6 +15,8 @@
 
     <link rel="apple-touch-icon"
       href="images/favicon.ico" />
+    <link rel="icon" href="img/favicon.ico"/>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
 
 
     #* stylesheets maps *# 
@@ -28,11 +30,9 @@
     <script src="$f" type="text/javascript" ></script>
     #end
 
-
-
     <title>$i18n.application.title</title>
     <script language="JavaScript" type="text/javascript">
-
+        
         $(document).ready(function() {
 	    // Initializing application	
 	    K5.init({
@@ -55,9 +55,7 @@
                 //selected configurations 
                 "conf": {
                     "i18n" :{
-                        #if(!$conf.getBoolean('cdkSources'))
-                            "cdkSources":$conf.getString('cdkSources')
-                         #end
+                        "cdkSources":$conf.getString('cdkSources')
                     },
                     "pdf":{
                         #if(!$conf.getBoolean('turnOffPdfCheck'))
