@@ -65,6 +65,9 @@ for uuid in for_correction:
 
     sysno = input("SYSNO / skip / exit: \n")
     if sysno == "skip":
+        skips = open("./output/missing_in_cat_skipped.txt", "a")
+        skips.write("https://kramerius.techlib.cz/search/handle/" + uuid)
+        skips.close()
         for_correction.remove(uuid)
         for_correction.sort()
         update_for_correction = open("./output/missing_in_cat_resume", "w")
@@ -81,7 +84,7 @@ for uuid in for_correction:
         print("Invalid...")
         sysno = input("Enter SYSNO: \n")
 
-    aleph_export.write(sysno + " 85640 L $$uhttp://kramerius.techlib.cz/search/handle/" + uuid[:-1] +
+    aleph_export.write(sysno + " 85640 L $$uhttps://kramerius.techlib.cz/search/handle/" + uuid[:-1] +
                        "$$yDigitalizovaný dokument\n")
     # uuid[:-1] removes \n character at the end of line when reading text file
     aleph_export.write(sysno + " BAS   L di\n")

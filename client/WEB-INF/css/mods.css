@@ -15,7 +15,7 @@ div#nodePathTr span{
 }
 
 
-/* xml structure */
+
 
 div.modsxml ul{
     padding-left:10px;
@@ -23,7 +23,20 @@ div.modsxml ul{
     margin: 0;
 }
 div.modsxml ul li                     {margin-bottom:0; padding-bottom:0;list-style: none;}
-div.modsxml ul li.node:hover>span.nodeName         {text-decoration: underline;}
+
+
+
+#metadata div.context span.nodeName{
+    cursor: default;
+}
+
+
+
+#metadata div.modsxml ul li.node:hover>span.nodeName{         
+text-decoration: none;
+}
+
+
 div.modsxml ul li input,
 
 
@@ -34,7 +47,7 @@ div.modsxml ul.nodeCore{
 div.modsxml ul li span.nodeName{
     padding:1px; 
     font-style:italic; 
-    color:white; 
+    color:black; 
 }
 div.modsxml ul li span.nodeName:before{
     content: attr(data-before);
@@ -78,12 +91,12 @@ div.modsxml ul li ul.nodeCore li p.nodeValue   {
     
     font-weight:bold; 
     padding:0; margin:0; margin-left:4px;
-    color:#eeeeee;
+    color:#ea0000;
     word-break: break-word;
 }
-div.modsxml ul li ul.nodeCore li p.nodeValue:hover              {color:#ffffff; }
-div.modsxml ul li ul.nodeCore li p.nodeValue span.noValue       {color:#dddddd;}
-div.modsxml ul li ul.nodeCore li p.nodeValue:hover span.noValue {color:#dddddd; }
+div.modsxml ul li ul.nodeCore li p.nodeValue:hover              {color:rgba(170, 0, 0, 1); }
+div.modsxml ul li ul.nodeCore li p.nodeValue span.noValue       {color:rgba(170, 0, 0, 1);}
+div.modsxml ul li ul.nodeCore li p.nodeValue:hover span.noValue {color:rgba(170, 0, 0, 1); }
 div.modsxml ul li ul.nodeCore li a.addChild                     {margin-left:4px;}
 
 
@@ -95,5 +108,27 @@ div.modsxml span.comment {
 }
 
 
-/* fix for IE6 */
+
+li.fullmods {
+    display: none;
+}
+
+
+
+div.modsxml li.mods, div.modsxml li.modsCollection,
+div.modsxml li.mods li.identifier,
+div.modsxml li.mods li.titleInfo, div.modsxml li.mods li.titleInfo li.title,
+div.modsxml li.mods li.titleInfo li.nonSort,
+div.modsxml li.mods li.titleInfo li.subTitle,
+li.part li.detail[xtype = "volume"] li.number,
+li.name[xtype= "personal"],
+li.name[xtype= "personal"] li.role,
+li.name[xtype= "personal"] li.namePart
+{
+    display: list-item;
+}
+
+
+
+
 * html .hitarea {display:inline; float:none;}

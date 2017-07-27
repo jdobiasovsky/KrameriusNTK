@@ -44,7 +44,7 @@
         
         <div id="main" class="shadow">
             <%@ include file="inc/header.jsp" %>
-            <div id="i-content-container" style="display:block;">
+            <div style="display:block;">
                 <%@ include file="inc/details/item.jsp" %>
             </div>
             <div class="clear"></div>
