@@ -398,8 +398,10 @@ li.public:before{
     left:0px;
     top:0;
     cursor: pointer;
+}
 
-
+#yearRows div.rowtitle:hover{
+    font-size: 1.6em;
 }
 
 #yearRows div.total{
@@ -415,7 +417,9 @@ li.public:before{
     top:0;
     cursor: pointer;
 }
-
+#yearRows div.total:hover{
+    font-size: 1.6em;
+}
 
 #facets{
     overflow: auto;
@@ -1667,7 +1671,7 @@ li.public:before{
 
 #browse .results{
     overflow:hidden;
-    height: calc(100% - 132px);
+    height: calc(100% - 143px);
     width: 100%;
 }
 
@@ -2393,7 +2397,7 @@ div.logoptions {
         background-color: rgba(231, 231, 231, 1);
         z-index: 43;
         left: calc(50% - 150px);
-        color: white;
+        color: black;
 }
 
 #logoptions_container  ul {
@@ -2507,7 +2511,7 @@ div.share {
         background-color: rgba(231, 231, 231, 1);
         box-shadow: rgba(0, 0, 0, 0.5) 4px 4px 8px 0px;
         z-index: 43;
-        color: white;
+        color: black;
         margin:auto;
         left:calc(50% - 250px);
 }
@@ -2559,15 +2563,15 @@ div.share_footer {
 
 
 #share_container ul li div.sharesicon svg path{
-    fill:white; 
+    fill:black; 
 }
 
 #share_container ul li div.sharesicon svg g path{
-    fill:white; 
+    fill:black; 
 }
 
 #share_container ul li div.sharesicon svg g polygon{
-    fill:white; 
+    fill:black; 
 }
 
 
@@ -2720,7 +2724,7 @@ div.download {
         background-color: rgba(231, 231, 231, 1);
         box-shadow: rgba(0, 0, 0, 0.5) 4px 4px 8px 0px;
         z-index: 43;
-        color: white;
+        color: black;
         margin:auto;
         left:calc(50% - 150px);
 }
@@ -2837,7 +2841,7 @@ div.download_footer  .buttons div.sel{
   padding: 0;
   margin: 0;
   margin-left: 4px;
-  color: #eeeeee;
+  color: black;
   text-decoration: none;
 }
 
@@ -2967,4 +2971,3 @@ div.feedback_footer  .buttons div.sel{
     opacity:0.7;
     background-color: white;
     width:100%;
-   

@@ -204,7 +204,7 @@ Da.prototype = {
     lineWidth: 0.5,
     infoRect: new Rectangle(0, 0, 0, 0),
     infoBg: "#000000",
-    infoColor: "#FFFF00",
+    infoColor: "#CCCCCC",
     infoPadding: 10,
     infoArrowW: 10,
     init: function() {
